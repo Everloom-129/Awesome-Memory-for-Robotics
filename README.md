@@ -17,27 +17,26 @@ Here we organized a list of resources on **memory for robotics**, including pape
 
 ---
 
-## Contents
+## 📋 Table of Contents
 
-- [Taxonomy](#taxonomy)
-- [Survey & Tutorials](#survey--tutorials)
-- [Core Topics](#core-topics)
-  - [Episodic / Semantic Memory](#episodic--semantic-memory)
-  - [Scene Memory & Spatial Representations](#scene-memory--spatial-representations)
-  - [Retrieval-Augmented Policies (RAP)](#retrieval-augmented-policies-rap)
-  - [World Models & Latent Dynamics](#world-models--latent-dynamics)
-  - [Memory for Navigation & SLAM](#memory-for-navigation--slam)
-  - [Memory for Manipulation](#memory-for-manipulation)
-  - [Active Perception + Memory](#active-perception--memory)
-  - [Lifelong / Continual Robot Learning](#lifelong--continual-robot-learning)
-  - [Human-in-the-loop & Demonstration Memory](#human-in-the-loop--demonstration-memory)
-- [Benchmarks & Evaluation](#benchmarks--evaluation)
-- [Datasets](#datasets)
-- [Tools & Libraries](#tools--libraries)
-- [Engineering Patterns](#engineering-patterns)
-- [Related Awesome Lists](#related-awesome-lists)
+- [Surveys & Overviews](#surveys--overviews)
+- [Memory Systems & Cognitive Architecture](#memory-systems--cognitive-architecture)
+- [Episodic Memory](#episodic-memory)
+- [Semantic Memory](#semantic-memory)
+- [Spatial & Scene Memory](#spatial--scene-memory)
+  - [3D Scene Memory](#3d-scene-memory)
+  - [Spatial Memory & SLAM](#spatial-memory--slam)
+- [Visual Memory for Navigation](#visual-memory-for-navigation)
+- [Memory for Manipulation](#memory-for-manipulation)
+- [LLM/VLM-based Memory Systems](#llmvlm-based-memory-systems)
+- [World Models & Memory](#world-models--memory)
+- [Lifelong Learning & Continual Learning](#lifelong-learning--continual-learning)
+  - [Experience Replay](#experience-replay)
+  - [Skill Transfer & Memory](#skill-transfer--memory)
+- [Working Memory & Short-term Memory](#working-memory--short-term-memory)
+- [Benchmarks & Datasets](#benchmarks--datasets)
+- [Open-Source Projects](#open-source-projects)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -65,14 +64,198 @@ Read more: [`docs/taxonomy.md`](docs/taxonomy.md)
 
 ---
 
-## Survey & Tutorials
-
-> Add surveys that explicitly discuss memory for embodied agents/robotics.
-
-- **[Survey]** *Title* — Authors, Venue, Year. [[paper]](LINK) [[code]](LINK)
-- **[Tutorial]** *Title* — Authors, Venue, Year. [[video]](LINK) [[slides]](LINK)
 
 ---
+
+## Surveys & Overviews
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| A Survey on Memory Mechanisms in the Era of LLMs | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2504.15965) |
+| A Survey on the Memory Mechanism of Large Language Model-based Agents | ACM | 2025 | [[Paper]](https://dl.acm.org/doi/10.1145/3748302) |
+| Foundation Models in Robotics: Applications, Challenges, and the Future | IJRR | 2025 | [[Paper]](https://journals.sagepub.com/doi/abs/10.1177/02783649241281508) |
+| Foundation Model Driven Robotics: A Comprehensive Review | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2507.10087) |
+| Skill Transfer Learning for Autonomous Robots and Human-Robot Cooperation: A Survey | RAS | 2020 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0921889019309972) |
+
+---
+
+## Memory Systems & Cognitive Architecture
+
+Memory systems that provide comprehensive cognitive capabilities for robots, often inspired by human memory architecture.
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| A Memory System of a Robot Cognitive Architecture and its Implementation in ArmarX | RAS | 2023 | [[Paper]](https://www.sciencedirect.com/science/article/abs/pii/S0921889023000544) [[PDF]](https://h2t.iar.kit.edu/pdf/Peller2023.pdf) |
+| A Memory System for a Conscious Robot | Frontiers | 2018 | [[Paper]](https://pmc.ncbi.nlm.nih.gov/articles/PMC7805698/) |
+| RoboMemory: A Brain-inspired Multi-memory Agentic Framework for Lifelong Learning | OpenReview | 2025 | [[Paper]](https://openreview.net/forum?id=HHGzG1Choi) |
+| Memory as the Substrate of Cognition: A Developmental Cognitive Robotics Perspective | ResearchGate | 2015 | [[Paper]](https://www.researchgate.net/profile/Paul-Baxter-6/publication/277799284) |
+| Dynamic Learning in Cognitive Robotics through a Procedural Long Term Memory | EAAI | 2013 | [[Paper]](https://link.springer.com/article/10.1007/s12530-013-9079-4) |
+| Structured Memory for Robots | EmergentMind | 2025 | [[Paper]](https://www.emergentmind.com/topics/structured-memory-system-for-robots) |
+
+---
+
+## Episodic Memory
+
+Episodic memory enables robots to store and recall specific experiences and events.
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| Deep Episodic Memory: Encoding, Recalling, and Predicting Episodic Experiences for Robot Action Execution | IEEE RAL | 2018 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/8421022/) |
+| Storing and Retrieving Perceptual Episodic Memories for Long-term Manipulation Tasks | ICAR | 2017 | [[Paper]](https://ieeexplore.ieee.org/document/8023492/) |
+| Towards an Episodic Memory for Cognitive Robots | ECAI Workshop | 2008 | [[Paper]](http://tams-www.informatik.uni-hamburg.de/paper/2008/jockel_ECAI08towards.pdf) |
+| Episodic Memory Banks for Lifelong Robot Learning | OpenReview | 2024 | [[Paper]](https://openreview.net/forum?id=BBgDA4y0B9) |
+| Episodic Memory Model for Learning Robotic Manipulation | arXiv | 2021 | [[Paper]](https://arxiv.org/abs/2104.10218) |
+| Forgetting in Robotic Episodic Long-Term Memory | ECAI | 2024 | [[Paper]](https://events.infovaya.com/uploads/documents/pdfviewer/0a/40/131281-2412.pdf) |
+| Beyond Recall: Evaluating Forgetting Mechanisms for Multi-Robot Systems | H2T | 2025 | [[Paper]](https://h2t.iar.kit.edu/pdf/Plewnia2025.pdf) |
+| Synthesizing the Temporal Self: Robotic Models of Episodic Memory | PMC | 2024 | [[Paper]](https://pmc.ncbi.nlm.nih.gov/articles/PMC11523108/) |
+| ART Neural Network-based Integration of Episodic Memory and Semantic Memory for Task Planning | AURO | 2019 | [[Paper]](https://link.springer.com/article/10.1007/s10514-019-09868-x) |
+| Long Horizon Episodic Decision Making for Cognitively Inspired Robots | COGSYS | 2024 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S1389041724000536) |
+
+---
+
+## Semantic Memory
+
+Semantic memory provides robots with structured knowledge about concepts, objects, and their relationships.
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| A Semantic Memory System for Task Planning under Uncertainties | IROS | 2010 | [[Paper]](https://ieeexplore.ieee.org/document/5650956/) |
+| Robot Task Planning using Semantic Maps | RAS | 2008 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0921889008001188) |
+| CRESTA: A Cognitivist Framework for Semantic-driven Task Awareness | RAS | 2025 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0921889025004002) |
+| Meta-Memory: Retrieving and Integrating Semantic-Spatial Memory | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2509.20754) |
+
+---
+
+## Spatial & Scene Memory
+
+### 3D Scene Memory
+
+Memory systems for representing and reasoning about 3D environments.
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| 3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning | CVPR | 2025 | [[Paper]](https://arxiv.org/abs/2411.17735) [[Project]](https://umass-embodied-agi.github.io/3D-Mem/) |
+| SnapMem: 3D Scene Memory for Embodied Exploration | OpenReview | 2024 | [[Paper]](https://openreview.net/forum?id=mz8unSsSsB) |
+| CLIP-Fields: Weakly Supervised Semantic Fields for Robotic Memory | arXiv | 2022 | [[Paper]](https://arxiv.org/abs/2210.05663) |
+| Hierarchical Representations and Explicit Memory: Learning Effective Navigation Policies on 3D Scene Graphs | ICRA | 2022 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/9812179/) |
+| What Is The Best 3D Scene Representation for Robotics? | arXiv | 2025 | [[Paper]](https://arxiv.org/html/2512.03422v1) |
+
+### Spatial Memory & SLAM
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| SLAM-Based Spatial Memory for Behavior-Based Robots | IFAC | 2015 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S2405896315026579) |
+| Cognitive Memory and Mapping in a Brain-like System for Robotic Navigation | Neural Networks | 2017 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0893608016301861) |
+
+---
+
+## Memory for Navigation
+
+Memory mechanisms that enable robots to navigate using visual information.
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| Visual Memory for Robust Path Following | NeurIPS | 2018 | [[Paper]](https://saurabhg.web.illinois.edu/pdfs/kumar2018visual.pdf) |
+| Structured Scene Memory for Vision-Language Navigation | CVPR | 2021 | [[Paper]](https://openaccess.thecvf.com/content/CVPR2021/) |
+| Visual Graph Memory with Unsupervised Representation for Visual Navigation | ICCV | 2021 | [[Paper]](https://openaccess.thecvf.com/content/ICCV2021/) |
+| MemoNav: Working Memory Model for Visual Navigation | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2402.xxxxx) |
+| Scene Memory Transformer for Embodied Agents in Long-Horizon Tasks | CVPR | 2019 | [[Paper]](https://openaccess.thecvf.com/content_CVPR_2019/) |
+| Memory-Augmented Reinforcement Learning for Image-Goal Navigation | IROS | 2022 | [[Paper]](https://ieeexplore.ieee.org/document/xxxxx) |
+| MultiON: Benchmarking Semantic Map Memory using Multi-Object Navigation | NeurIPS | 2020 | [[Paper]](https://proceedings.neurips.cc/paper/2020/) |
+| Image-based Robot Navigation from an Image Memory | RAS | 2007 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0921889006001734) |
+| 3D Navigation based on a Visual Memory | ICRA | 2006 | [[Paper]](https://ieeexplore.ieee.org/document/1642112/) |
+| Memory-Maze: Scenario Driven Benchmark for Visual Navigation | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2405.07060) |
+| Deep Visual Odometry With Adaptive Memory | PAMI | 2022 | [[Paper]](https://ieeexplore.ieee.org/document/xxxxx) |
+| Learning Indoor Robot Navigation using Visual and Sensorimotor Map | PMC | 2013 | [[Paper]](https://pmc.ncbi.nlm.nih.gov/articles/PMC3791472/) |
+
+---
+
+## Memory for Manipulation
+
+Memory systems for robotic manipulation tasks.
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| Out of Sight, Still in Mind: Reasoning and Planning about Unobserved Objects with Video Tracking Enabled Memory Models | ICRA | 2024 | [[Paper]](https://ieeexplore.ieee.org/document/xxxxx) |
+| Deep Episodic Memory for Robot Action Execution | IEEE RAL | 2018 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/8421022/) |
+| Storing and Retrieving Perceptual Episodic Memories for Long-term Manipulation Tasks | ICAR | 2017 | [[Paper]](https://ieeexplore.ieee.org/document/8023492/) |
+
+---
+
+## LLM/VLM-based Memory Systems
+
+Memory systems leveraging Large Language Models and Vision-Language Models.
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| ReMEmbR: Building and Reasoning Over Long-Horizon Spatio-Temporal Memory for Robots | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2403.xxxxx) [[Project]](https://rasc.usc.edu/blog/remembr/) [[Blog]](https://developer.nvidia.com/blog/using-generative-ai-to-enable-robots-to-reason-and-act-with-remembr/) |
+| ELLMER: Embodied Large Language Model-Enabled Robot Framework | Nature MI | 2025 | [[Paper]](https://www.nature.com/articles/s42256-025-01005-x) |
+| VLM Agents Generate Their Own Memories (ICAL) | NeurIPS | 2024 | [[Paper]](https://arxiv.org/abs/2406.14596) [[Project]](https://ical-learning.github.io/) |
+| Open-ended Instructable Embodied Agents with Memory-Augmented Large Language Models | EMNLP Findings | 2023 | [[Paper]](https://aclanthology.org/2023.findings-emnlp.226/) |
+| LLM-empowered Embodied Agent for Memory-Augmented Task Planning in Household Robotics | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2504.21716) |
+| Nadine: An LLM-driven Intelligent Social Robot with Affective Capabilities and Human-like Memory | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2405.20189) |
+| Scaling up Memory for Robotic Control via Experience Retrieval (MemER) | OpenReview | 2025 | [[Paper]](https://openreview.net/forum?id=1dH4ARGdwD) |
+| JARVIS-1: Open-World Multi-task Agents with Memory-Augmented Multimodal Language Models | arXiv | 2023 | [[Paper]](https://arxiv.org/abs/2311.xxxxx) |
+| Grounding VLMs for Robotics through Self-Generated Memory | arXiv | 2025 | [[Paper]](https://arxiv.org/html/2507.16713v1) |
+| CLFR-M: Continual Learning Framework for Robots via Human Feedback and Dynamic Memory | IEEE | 2024 | [[Paper]](https://ieeexplore.ieee.org/document/10672832/) |
+
+---
+
+## World Models & Memory
+
+World models that incorporate memory for prediction and planning.
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| Mastering Diverse Control Tasks through World Models | Nature | 2025 | [[Paper]](https://www.nature.com/articles/s41586-025-08744-2) |
+| Mastering Memory Tasks with World Models (R2I) | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2403.04253) |
+| Ctrl-World: A Controllable Generative World Model for Robot Manipulation | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2510.10125) |
+| Genie 3: A New Frontier for World Models | Google DeepMind | 2025 | [[Blog]](https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/) |
+| Titans + MIRAS: Helping AI have Long-term Memory | Google Research | 2025 | [[Blog]](https://research.google/blog/titans-miras-helping-ai-have-long-term-memory/) |
+
+---
+
+## Lifelong Learning & Continual Learning
+
+### Experience Replay
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| Selective Experience Replay for Lifelong Learning | AAAI | 2018 | [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/11595) |
+| Lifelong Robotic Reinforcement Learning by Retaining Experiences | CoLLAs | 2022 | [[Paper]](https://proceedings.mlr.press/v199/xie22a.html) |
+| AdaER: An Adaptive Experience Replay Approach for Continual Lifelong Learning | Neurocomputing | 2024 | [[Paper]](https://www.sciencedirect.com/science/article/abs/pii/S0925231223013279) |
+| Effective Generative Replay with Strong Memory for Continual Learning | KBS | 2025 | [[Paper]](https://www.sciencedirect.com/science/article/abs/pii/S0950705125005234) |
+
+### Lifelong Learning Frameworks
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| Preserving and Combining Knowledge in Robotic Lifelong Learning | Nature MI | 2025 | [[Paper]](https://www.nature.com/articles/s42256-025-00983-2) |
+| A Lifelong Learning Approach to Mobile Robot Navigation | IEEE RAL | 2021 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/9345478/) |
+| Task-agnostic Lifelong Robot Learning with Retrieval-based Memory | OpenReview | 2025 | [[Paper]](https://openreview.net/forum?id=FBaFSOjgI2) [[arXiv]](https://arxiv.org/abs/2410.02995) |
+| Towards General Purpose Robots at Scale: Memory and Lifelong Learning | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2501.10395) |
+| Continual Robot Learning | CMU Thesis | 2023 | [[Paper]](https://www.ri.cmu.edu/app/uploads/2023/09/snpowers_phd_ri_2023.pdf) |
+
+### Skill Transfer & Memory
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| Skill Transfer Learning for Autonomous Robots and Human-Robot Cooperation: A Survey | RAS | 2020 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0921889019309972) |
+| Unsupervised Skill Transfer Learning for Autonomous Robots | RAS | 2021 | [[Paper]](https://www.sciencedirect.com/science/article/abs/pii/S0921889021001202) |
+| Efficient Policy Learning by Extracting Transferable Robot Skills | arXiv | 2024 | [[Paper]](https://arxiv.org/html/2406.17768v3) |
+
+---
+
+## Working Memory & Short-term Memory
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| A Working Memory Model Improves Cognitive Control in Agents and Robots | COGSYS | 2018 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S1389041717300943) |
+| Short-term Memory Mechanisms in Neural Network Learning of Robot Navigation Tasks | IEEE | 2010 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/5418323/) |
+| An Incremental Learning Model for Mobile Robot: From Short-term Memory to Long-term Memory | IEEE TAI | 2021 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/9665293/) |
+| A Hierarchical Autonomous Robot Controller for Learning and Memory | Adaptive Behavior | 2009 | [[Paper]](https://journals.sagepub.com/doi/abs/10.1177/1059712309105814) |
+
+
 
 ## Core Topics
 
