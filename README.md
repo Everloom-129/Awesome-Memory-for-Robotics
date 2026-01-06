@@ -119,6 +119,8 @@ Semantic memory provides robots with structured knowledge about concepts, object
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| Enter the Mind Palace: Reasoning and Planning for Long-term Active Embodied Question Answering | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2507.12846) |
+| Memory-Centric Embodied Question Answering | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2505.13948) |
 | CRESTA: A Cognitivist Framework for Semantic-driven Task Awareness | RAS | 2025 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0921889025004002) |
 | Meta-Memory: Retrieving and Integrating Semantic-Spatial Memory | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2509.20754) |
 | A Semantic Memory System for Task Planning under Uncertainties | IROS | 2010 | [[Paper]](https://ieeexplore.ieee.org/document/5650956/) |
@@ -137,6 +139,7 @@ Memory systems for representing and reasoning about 3D environments.
 | 3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning | CVPR | 2025 | [[Paper]](https://arxiv.org/abs/2411.17735) [[Project]](https://umass-embodied-agi.github.io/3D-Mem/) |
 | What Is The Best 3D Scene Representation for Robotics? | arXiv | 2025 | [[Paper]](https://arxiv.org/html/2512.03422v1) |
 | SnapMem: 3D Scene Memory for Embodied Exploration | OpenReview | 2024 | [[Paper]](https://openreview.net/forum?id=mz8unSsSsB) |
+| Embodied-RAG: General Non-parametric Embodied Memory for Retrieval and Generation | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2409.18313) |
 | CLIP-Fields: Weakly Supervised Semantic Fields for Robotic Memory | arXiv | 2022 | [[Paper]](https://arxiv.org/abs/2210.05663) |
 | Hierarchical Representations and Explicit Memory: Learning Effective Navigation Policies on 3D Scene Graphs | ICRA | 2022 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/9812179/) |
 
@@ -179,6 +182,7 @@ Memory systems for robotic manipulation tasks.
 |-------|-------|------|-------|
 | Learning Long-Context Diffusion Policies via Past-Token Prediction | CoRL | 2025 | [[Paper]](https://arxiv.org/abs/2505.09561) [[Project]](https://long-context-dp.github.io/) |
 | SAM2Act: Integrating Visual Foundation Model with A Memory Architecture for Robotic Manipulation | ICML | 2025 | [[Paper]](https://arxiv.org/abs/2501.18564) |
+| DynaMem: Online Dynamic Spatio-Semantic Memory for Open World Mobile Manipulation | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2411.04999) |
 | Out of Sight, Still in Mind: Reasoning and Planning about Unobserved Objects with Video Tracking Enabled Memory Models | ICRA | 2024 | [[Paper]](https://ieeexplore.ieee.org/document/xxxxx) |
 | Deep Episodic Memory for Robot Action Execution | IEEE RAL | 2018 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/8421022/) |
 | Storing and Retrieving Perceptual Episodic Memories for Long-term Manipulation Tasks | ICAR | 2017 | [[Paper]](https://ieeexplore.ieee.org/document/8023492/) |
