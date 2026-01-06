@@ -159,10 +159,10 @@ Memory mechanisms that enable robots to navigate using visual information.
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
 | Spatially-Enhanced Recurrent Memory for Long-Range Mapless Navigation via End-to-End Reinforcement Learning | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2506.05997) |
-| MemoNav: Working Memory Model for Visual Navigation | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2402.xxxxx) |
+| MemoNav: Working Memory Model for Visual Navigation | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2402.19161) |
 | Memory-Maze: Scenario Driven Benchmark for Visual Navigation | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2405.07060) |
-| Memory-Augmented Reinforcement Learning for Image-Goal Navigation | IROS | 2022 | [[Paper]](https://ieeexplore.ieee.org/document/xxxxx) |
-| Deep Visual Odometry With Adaptive Memory | PAMI | 2022 | [[Paper]](https://ieeexplore.ieee.org/document/xxxxx) |
+| Memory-Augmented Reinforcement Learning for Image-Goal Navigation | IROS | 2022 | [[Paper]](https://arxiv.org/abs/2101.05181) |
+| Deep Visual Odometry With Adaptive Memory | PAMI | 2022 | [[Paper]](https://arxiv.org/abs/2008.01655) |
 | Structured Scene Memory for Vision-Language Navigation | CVPR | 2021 | [[Paper]](https://openaccess.thecvf.com/content/CVPR2021/) |
 | Visual Graph Memory with Unsupervised Representation for Visual Navigation | ICCV | 2021 | [[Paper]](https://openaccess.thecvf.com/content/ICCV2021/) |
 | MultiON: Benchmarking Semantic Map Memory using Multi-Object Navigation | NeurIPS | 2020 | [[Paper]](https://proceedings.neurips.cc/paper/2020/) |
@@ -183,7 +183,7 @@ Memory systems for robotic manipulation tasks.
 | Learning Long-Context Diffusion Policies via Past-Token Prediction | CoRL | 2025 | [[Paper]](https://arxiv.org/abs/2505.09561) [[Project]](https://long-context-dp.github.io/) |
 | SAM2Act: Integrating Visual Foundation Model with A Memory Architecture for Robotic Manipulation | ICML | 2025 | [[Paper]](https://arxiv.org/abs/2501.18564) |
 | DynaMem: Online Dynamic Spatio-Semantic Memory for Open World Mobile Manipulation | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2411.04999) |
-| Out of Sight, Still in Mind: Reasoning and Planning about Unobserved Objects with Video Tracking Enabled Memory Models | ICRA | 2024 | [[Paper]](https://ieeexplore.ieee.org/document/xxxxx) |
+| Out of Sight, Still in Mind: Reasoning and Planning about Unobserved Objects with Video Tracking Enabled Memory Models | ICRA | 2024 | [[Paper]](https://arxiv.org/abs/2309.15278) |
 | Deep Episodic Memory for Robot Action Execution | IEEE RAL | 2018 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/8421022/) |
 | Storing and Retrieving Perceptual Episodic Memories for Long-term Manipulation Tasks | ICAR | 2017 | [[Paper]](https://ieeexplore.ieee.org/document/8023492/) |
 
@@ -201,9 +201,9 @@ Memory systems leveraging Large Language Models and Vision-Language Models.
 | Scaling up Memory for Robotic Control via Experience Retrieval (MemER) | OpenReview | 2025 | [[Paper]](https://openreview.net/forum?id=1dH4ARGdwD) [[Project]](https://jen-pan.github.io/memer/) |
 | CLFR-M: Continual Learning Framework for Robots via Human Feedback and Dynamic Memory | IEEE | 2024 | [[Paper]](https://ieeexplore.ieee.org/document/10672832/) |
 | Nadine: An LLM-driven Intelligent Social Robot with Affective Capabilities and Human-like Memory | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2405.20189) |
-| ReMEmbR: Building and Reasoning Over Long-Horizon Spatio-Temporal Memory for Robots | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2403.xxxxx) [[Project]](https://rasc.usc.edu/blog/remembr/) [[Blog]](https://developer.nvidia.com/blog/using-generative-ai-to-enable-robots-to-reason-and-act-with-remembr/) |
+| ReMEmbR: Building and Reasoning Over Long-Horizon Spatio-Temporal Memory for Robots | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2409.13682) [[Project]](https://rasc.usc.edu/blog/remembr/) [[Blog]](https://developer.nvidia.com/blog/using-generative-ai-to-enable-robots-to-reason-and-act-with-remembr/) |
 | VLM Agents Generate Their Own Memories (ICAL) | NeurIPS | 2024 | [[Paper]](https://arxiv.org/abs/2406.14596) [[Project]](https://ical-learning.github.io/) |
-| JARVIS-1: Open-World Multi-task Agents with Memory-Augmented Multimodal Language Models | arXiv | 2023 | [[Paper]](https://arxiv.org/abs/2311.xxxxx) |
+| JARVIS-1: Open-World Multi-task Agents with Memory-Augmented Multimodal Language Models | arXiv | 2023 | [[Paper]](https://arxiv.org/abs/2311.05997) |
 | Open-ended Instructable Embodied Agents with Memory-Augmented Large Language Models | EMNLP Findings | 2023 | [[Paper]](https://aclanthology.org/2023.findings-emnlp.226/) |
 
 ---
