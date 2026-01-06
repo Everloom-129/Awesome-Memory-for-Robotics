@@ -147,6 +147,7 @@ Memory systems for representing and reasoning about 3D environments.
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| Unsupervised Online Learning for Robotic Interestingness with Visual Memory | IEEE TOR | 2021 | [[Paper]](https://arxiv.org/abs/2111.09793) [[Code]](https://github.com/wang-chen/interestingness) |
 | Cognitive Memory and Mapping in a Brain-like System for Robotic Navigation | Neural Networks | 2017 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0893608016301861) |
 | SLAM-Based Spatial Memory for Behavior-Based Robots | IFAC | 2015 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S2405896315026579) |
 
