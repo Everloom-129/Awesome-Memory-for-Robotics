@@ -162,6 +162,7 @@ Memory mechanisms that enable robots to navigate using visual information.
 | Spatially-Enhanced Recurrent Memory for Long-Range Mapless Navigation via End-to-End Reinforcement Learning | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2506.05997) |
 | MemoNav: Working Memory Model for Visual Navigation | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2402.19161) |
 | Memory-Maze: Scenario Driven Benchmark for Visual Navigation | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2405.07060) |
+| Emergence of Maps in the Memories of Blind Navigation Agents | ICLR | 2023 | [[Paper]](https://openreview.net/forum?id=3HL8sQ7j8j) [[Project]](https://wijmans.xyz/publication/eom/) |
 | Memory-Augmented Reinforcement Learning for Image-Goal Navigation | IROS | 2022 | [[Paper]](https://arxiv.org/abs/2101.05181) |
 | Deep Visual Odometry With Adaptive Memory | PAMI | 2022 | [[Paper]](https://arxiv.org/abs/2008.01655) |
 | Structured Scene Memory for Vision-Language Navigation | CVPR | 2021 | [[Paper]](https://openaccess.thecvf.com/content/CVPR2021/) |
