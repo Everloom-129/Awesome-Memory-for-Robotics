@@ -176,6 +176,7 @@ Memory systems for robotic manipulation tasks.
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| Learning Long-Context Diffusion Policies via Past-Token Prediction | CoRL | 2025 | [[Paper]](https://arxiv.org/abs/2505.09561) [[Project]](https://long-context-dp.github.io/) |
 | SAM2Act: Integrating Visual Foundation Model with A Memory Architecture for Robotic Manipulation | ICML | 2025 | [[Paper]](https://arxiv.org/abs/2501.18564) |
 | Out of Sight, Still in Mind: Reasoning and Planning about Unobserved Objects with Video Tracking Enabled Memory Models | ICRA | 2024 | [[Paper]](https://ieeexplore.ieee.org/document/xxxxx) |
 | Deep Episodic Memory for Robot Action Execution | IEEE RAL | 2018 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/8421022/) |
@@ -192,7 +193,7 @@ Memory systems leveraging Large Language Models and Vision-Language Models.
 | ELLMER: Embodied Large Language Model-Enabled Robot Framework | Nature MI | 2025 | [[Paper]](https://www.nature.com/articles/s42256-025-01005-x) |
 | Grounding VLMs for Robotics through Self-Generated Memory | arXiv | 2025 | [[Paper]](https://arxiv.org/html/2507.16713v1) |
 | LLM-empowered Embodied Agent for Memory-Augmented Task Planning in Household Robotics | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2504.21716) |
-| Scaling up Memory for Robotic Control via Experience Retrieval (MemER) | OpenReview | 2025 | [[Paper]](https://openreview.net/forum?id=1dH4ARGdwD) |
+| Scaling up Memory for Robotic Control via Experience Retrieval (MemER) | OpenReview | 2025 | [[Paper]](https://openreview.net/forum?id=1dH4ARGdwD) [[Project]](https://jen-pan.github.io/memer/) |
 | CLFR-M: Continual Learning Framework for Robots via Human Feedback and Dynamic Memory | IEEE | 2024 | [[Paper]](https://ieeexplore.ieee.org/document/10672832/) |
 | Nadine: An LLM-driven Intelligent Social Robot with Affective Capabilities and Human-like Memory | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2405.20189) |
 | ReMEmbR: Building and Reasoning Over Long-Horizon Spatio-Temporal Memory for Robots | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2403.xxxxx) [[Project]](https://rasc.usc.edu/blog/remembr/) [[Blog]](https://developer.nvidia.com/blog/using-generative-ai-to-enable-robots-to-reason-and-act-with-remembr/) |
