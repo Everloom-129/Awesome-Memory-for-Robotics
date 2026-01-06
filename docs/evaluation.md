@@ -272,6 +272,16 @@ Evaluates visual-servoing robots on previously unseen long-horizon tasks.
 | **Year** | 2025 |
 | **Links** | [[Paper]](https://arxiv.org/abs/2502.15679) |
 
+#### FindingDory: A Benchmark to Evaluate Memory in Embodied Agents
+
+Evaluates tasks that demand fine-grained recall and multi-hop reasoning over past observations.
+
+| Attribute | Details |
+|-----------|---------|
+| **Focus** | Long-range embodied tasks |
+| **Year** | 2025 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2506.15635) |
+
 ---
 
 ## Evaluation Protocols
