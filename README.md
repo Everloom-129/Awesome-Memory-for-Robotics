@@ -99,10 +99,12 @@ Often inspired by human memory architecture.
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
-| An Incremental Learning Model for Mobile Robot: From Short-term Memory to Long-term Memory | IEEE TAI | 2021 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/9665293/) |
+| MemER: Scaling Up Memory for Robot Control via Experience Retrieval | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2510.20328) [[Project]](https://jen-pan.github.io/memer/) |
+| Beyond Sliding Windows: Learning to Manage Memory in Non-Markovian Environments | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2512.19154) |
+| Learning Long-Context Diffusion Policies via Past-Token Prediction | CoRL | 2025 | [[Paper]](https://arxiv.org/abs/2505.09561) [[Project]](https://long-context-dp.github.io/) |
+| SAM2Act: Integrating Visual Foundation Model with A Memory Architecture for Robotic Manipulation | ICML | 2025 | [[Paper]](https://arxiv.org/abs/2501.18564) |
 | A Working Memory Model Improves Cognitive Control in Agents and Robots | COGSYS | 2018 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S1389041717300943) |
 | Short-term Memory Mechanisms in Neural Network Learning of Robot Navigation Tasks | IEEE | 2010 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/5418323/) |
-| A Hierarchical Autonomous Robot Controller for Learning and Memory | Adaptive Behavior | 2009 | [[Paper]](https://journals.sagepub.com/doi/abs/10.1177/1059712309105814) |
 
 ---
 
@@ -112,10 +114,8 @@ Often inspired by human memory architecture.
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
 | Beyond Recall: Evaluating Forgetting Mechanisms for Multi-Robot Systems | H2T | 2025 | [[Paper]](https://h2t.iar.kit.edu/pdf/Plewnia2025.pdf) |
-| Episodic Memory Banks for Lifelong Robot Learning | OpenReview | 2024 | [[Paper]](https://openreview.net/forum?id=BBgDA4y0B9) |
 | Forgetting in Robotic Episodic Long-Term Memory | ECAI | 2024 | [[Paper]](https://events.infovaya.com/uploads/documents/pdfviewer/0a/40/131281-2412.pdf) |
 | Long Horizon Episodic Decision Making for Cognitively Inspired Robots | COGSYS | 2024 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S1389041724000536) |
-| Synthesizing the Temporal Self: Robotic Models of Episodic Memory | PMC | 2024 | [[Paper]](https://pmc.ncbi.nlm.nih.gov/articles/PMC11523108/) |
 | Episodic Memory Model for Learning Robotic Manipulation | arXiv | 2021 | [[Paper]](https://arxiv.org/abs/2104.10218) |
 | ART Neural Network-based Integration of Episodic Memory and Semantic Memory for Task Planning | AURO | 2019 | [[Paper]](https://link.springer.com/article/10.1007/s10514-019-09868-x) |
 | Deep Episodic Memory: Encoding, Recalling, and Predicting Episodic Experiences for Robot Action Execution | IEEE RAL | 2018 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/8421022/) |
@@ -133,7 +133,6 @@ Language provides robots with structured knowledge about concepts, objects, and 
 | Enter the Mind Palace: Reasoning and Planning for Long-term Active Embodied Question Answering | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2507.12846) |
 | Memory-Centric Embodied Question Answering | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2505.13948) |
 | CRESTA: A Cognitivist Framework for Semantic-driven Task Awareness | RAS | 2025 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0921889025004002) |
-| Meta-Memory: Retrieving and Integrating Semantic-Spatial Memory | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2509.20754) |
 | A Semantic Memory System for Task Planning under Uncertainties | IROS | 2010 | [[Paper]](https://ieeexplore.ieee.org/document/5650956/) |
 | Robot Task Planning using Semantic Maps | RAS | 2008 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0921889008001188) |
 
@@ -267,29 +266,28 @@ World models that incorporate memory for prediction and planning.
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
 | Preserving and Combining Knowledge in Robotic Lifelong Learning | Nature MI | 2025 | [[Paper]](https://www.nature.com/articles/s42256-025-00983-2) |
-| Task-agnostic Lifelong Robot Learning with Retrieval-based Memory | OpenReview | 2025 | [[Paper]](https://openreview.net/forum?id=FBaFSOjgI2) [[arXiv]](https://arxiv.org/abs/2410.02995) |
 | Towards General Purpose Robots at Scale: Memory and Lifelong Learning | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2501.10395) |
-| Continual Robot Learning | CMU Thesis | 2023 | [[Paper]](https://www.ri.cmu.edu/app/uploads/2023/09/snpowers_phd_ri_2023.pdf) |
 | A Lifelong Learning Approach to Mobile Robot Navigation | IEEE RAL | 2021 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/9345478/) |
 
 ### Skill Transfer & Memory
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
-| Efficient Policy Learning by Extracting Transferable Robot Skills | arXiv | 2024 | [[Paper]](https://arxiv.org/html/2406.17768v3) |
+| Efficient Policy Learning by Extracting Transferable Robot Skills | CoRL | 2024 | [[Paper]](https://arxiv.org/html/2406.17768v3) |
 | Unsupervised Skill Transfer Learning for Autonomous Robots | RAS | 2021 | [[Paper]](https://www.sciencedirect.com/science/article/abs/pii/S0921889021001202) |
 | Skill Transfer Learning for Autonomous Robots and Human-Robot Cooperation: A Survey | RAS | 2020 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0921889019309972) |
+Learning an Embedding Space for Transferable Robot Skills | ICLR | 2018 | [[Paper]](https://openreview.net/forum?id=rk07ZXZRb) |
 
 ---
 
 
 ## Benchmarks & Evaluation
 
-We care these features that actually pose challenges to memory:
+We treasure these features that actually pose challenges to memory:
 - **Partial observability:** occlusions, hidden states, deferred rewards
 - **Long-horizon:** requires recalling earlier observations/instructions
 - **Distribution shift:** new scenes, objects, layouts
-- **Recovery:** can the agent use memory to diagnose and retry?
+- **Recovery:** can the robots use memory to diagnose and retry?
 
 Read more: [`docs/evaluation.md`](docs/evaluation.md)
 
@@ -302,13 +300,24 @@ See: [`docs/datasets.md`](docs/datasets.md)
 
 ---
 
-## Related Awesome Lists
 
-- Awesome Memory for Agents — [[repo]](https://github.com/TsinghuaC3I/Awesome-Memory-for-Agents)
-- Awesome Multimodal Memory — [[repo]](https://github.com/patrick-tssn/Awesome-Multimodal-Memory)
-- Awesome LLM Robotics — [[repo]](https://github.com/GT-RIPL/Awesome-LLM-Robotics)
+## Citation
+
+If you find this repository useful, please consider citing:
+
+```bibtex
+@misc{awesome-memory-for-robotics,
+  author = {Jie Wang, Siming He},
+  title = {Awesome Memory for Robotics},
+  year = {2025},
+  publisher = {GitHub},
+  howpublished = {\url{https://github.com/Everloom-129/Awesome-Memory-for-Robotics}}
+}
+```
+
 
 ---
+
 
 ## Contributing
 
@@ -326,20 +335,11 @@ Please ensure your PR follows the existing format and includes:
 
 ---
 
-## Citation
+## Related Awesome Lists
 
-If you find this repository useful, please consider citing:
-
-```bibtex
-@misc{awesome-memory-for-robotics,
-  author = {Jie Wang, Siming He},
-  title = {Awesome Memory for Robotics},
-  year = {2025},
-  publisher = {GitHub},
-  howpublished = {\url{https://github.com/Everloom-129/Awesome-Memory-for-Robotics}}
-}
-```
-
+- Awesome Memory for Agents — [[repo]](https://github.com/TsinghuaC3I/Awesome-Memory-for-Agents)
+- Awesome Multimodal Memory — [[repo]](https://github.com/patrick-tssn/Awesome-Multimodal-Memory)
+- Awesome LLM Robotics — [[repo]](https://github.com/GT-RIPL/Awesome-LLM-Robotics)
 
 ---
 
