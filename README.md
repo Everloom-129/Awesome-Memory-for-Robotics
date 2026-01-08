@@ -147,6 +147,8 @@ Because non-markovian property makes VLAs prone to overfit, it's a huge challeng
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
 | MemER: Scaling Up Memory for Robot Control via Experience Retrieval | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2510.20328) [[Project]](https://jen-pan.github.io/memer/) |
+| HiF-VLA: Hindsight, Insight and Foresight through Motion Representation for Vision-Language-Action Models | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2512.09928)
+| CronusVLA: Towards Efficient and Robust Manipulation via Multi-Frame Vision-Language-Action Modeling | ArKiv | 2025 | [[Paper]](https://arxiv.org/abs/2506.19816) [[Project]](https://lihaohn.github.io/CronusVLA.github.io/) |
 | MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action Models for Robotic Manipulation | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2508.19236) |
 
 

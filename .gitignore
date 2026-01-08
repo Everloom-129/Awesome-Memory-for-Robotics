@@ -3,6 +3,11 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Custom files
+TODO.md
+twitter_thread.md
+
+
 # C extensions
 *.so
 
