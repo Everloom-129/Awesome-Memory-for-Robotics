@@ -12,7 +12,7 @@ Memory in robotics serves as a fundamental capability enabling robots to store, 
 
 ## Categories by Temporal Scope
 
-### Working Memory (Short-term)
+### Contexual Memory (Short-term working memory)
 
 Working memory maintains task-relevant information during immediate execution, typically within a single episode. It enables robots to track object states, maintain spatial awareness, and hold intermediate computation results.
 

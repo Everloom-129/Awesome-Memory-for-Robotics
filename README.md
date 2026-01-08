@@ -18,22 +18,22 @@ Here we organized a list of resources on **memory for robotics**, including pape
 
 - [Surveys & Overviews](#surveys--overviews)
 - [Memory Systems & Cognitive Architecture](#memory-systems--cognitive-architecture)
+- [Contexual Memory](#contexual-memory)
 - [Episodic Memory](#episodic-memory)
 - [Semantic Memory](#semantic-memory)
-- [Spatial & Scene Memory](#spatial--scene-memory)
-  - [3D Scene Memory](#3d-scene-memory)
-  - [Spatial Memory & SLAM](#spatial-memory--slam)
-- [Memory for Navigation](#memory-for-navigation)
 - [Memory for Manipulation](#memory-for-manipulation)
   - [VLAs](#vlas)
   - [Mobile Manipulation](#mobile-manipulation)
   - [General Manipulation](#general-manipulation)
 - [Memory for Locomotion](#memory-for-locomotion)
+- [Memory for Navigation](#memory-for-navigation)
+- [Spatial & Scene Memory](#spatial--scene-memory)
+  - [3D Scene Memory](#3d-scene-memory)
+  - [Spatial Memory & SLAM](#spatial-memory--slam)
 - [World Models & Memory](#world-models--memory)
 - [Lifelong Learning & Continual Learning](#lifelong-learning--continual-learning)
   - [Experience Replay](#experience-replay)
   - [Skill Transfer & Memory](#skill-transfer--memory)
-- [Working Memory & Short-term Memory](#working-memory--short-term-memory)
 - [Benchmarks & Evaluation](#benchmarks)
 - [Datasets](#datasets)
 - [Contributing](#contributing)
@@ -45,13 +45,13 @@ Here we organized a list of resources on **memory for robotics**, including pape
 Memory in robotics often mixes multiple axes:
 
 - **Timescale**
-  - *Working memory* (within-episode, short-term)
+  - *Contexual memory* (within-episode, short-term working memory)
   - *Episodic memory* (experience replay / trajectories / videos)
   - *Semantic memory* (facts, object affordances, task graphs)
-  - *Long-term / lifelong memory* (continual accumulation across tasks)
+  - *Long-term / lifelong memory* (continual learning across tasks)
 - **Representation**
-  - key-value / slot memory, RNN/Transformer state
-  - retrieval over embeddings (vector DB)
+  - key-value / slot memory, RNN / LSTM / Transformer state
+  - retrieval over embeddings (RAG / vector DB)
   - 3D maps / NeRF / Gaussian splats / voxel grids
   - symbolic graphs (scene graphs / task graphs)
 - **Usage**
@@ -69,10 +69,11 @@ Read more: [`docs/taxonomy.md`](docs/taxonomy.md)
 
 ## Surveys & Overviews
 
+There hasn't been a comprehensive survey on memory for robotics, we hope this list can help.
+
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
-| A Survey on Memory Mechanisms in the Era of LLMs | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2504.15965) |
-| A Survey on the Memory Mechanism of Large Language Model-based Agents | ACM | 2025 | [[Paper]](https://dl.acm.org/doi/10.1145/3748302) |
+| From Human Memory to AI Memory: A Survey on Memory Mechanisms in the Era of LLMs | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2504.15965) |
 | Foundation Models in Robotics: Applications, Challenges, and the Future | IJRR | 2025 | [[Paper]](https://journals.sagepub.com/doi/abs/10.1177/02783649241281508) |
 | Foundation Model Driven Robotics: A Comprehensive Review | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2507.10087) |
 | Partially Observable Markov Decision Processes in Robotics: A Survey | IEEE T-RO | 2022 | [[Paper]](https://ieeexplore.ieee.org/document/9664288) |
@@ -96,9 +97,19 @@ Often inspired by human memory architecture.
 
 ---
 
+## Contexual Memory
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| An Incremental Learning Model for Mobile Robot: From Short-term Memory to Long-term Memory | IEEE TAI | 2021 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/9665293/) |
+| A Working Memory Model Improves Cognitive Control in Agents and Robots | COGSYS | 2018 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S1389041717300943) |
+| Short-term Memory Mechanisms in Neural Network Learning of Robot Navigation Tasks | IEEE | 2010 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/5418323/) |
+| A Hierarchical Autonomous Robot Controller for Learning and Memory | Adaptive Behavior | 2009 | [[Paper]](https://journals.sagepub.com/doi/abs/10.1177/1059712309105814) |
+
+---
+
 ## Episodic Memory
 
-Episodic memory enables robots to store and recall specific experiences and events.
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
@@ -117,7 +128,7 @@ Episodic memory enables robots to store and recall specific experiences and even
 
 ## Semantic Memory
 
-Semantic memory provides robots with structured knowledge about concepts, objects, and their relationships.
+Language provides robots with structured knowledge about concepts, objects, and their relationships.
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
@@ -127,59 +138,6 @@ Semantic memory provides robots with structured knowledge about concepts, object
 | Meta-Memory: Retrieving and Integrating Semantic-Spatial Memory | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2509.20754) |
 | A Semantic Memory System for Task Planning under Uncertainties | IROS | 2010 | [[Paper]](https://ieeexplore.ieee.org/document/5650956/) |
 | Robot Task Planning using Semantic Maps | RAS | 2008 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0921889008001188) |
-
----
-
-## Spatial & Scene Memory
-
-### 3D Scene Memory
-
-Memory systems for representing and reasoning about 3D environments.
-
-| Paper | Venue | Year | Links |
-|-------|-------|------|-------|
-| 3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning | CVPR | 2025 | [[Paper]](https://arxiv.org/abs/2411.17735) [[Project]](https://umass-embodied-agi.github.io/3D-Mem/) |
-| What Is The Best 3D Scene Representation for Robotics? | arXiv | 2025 | [[Paper]](https://arxiv.org/html/2512.03422v1) |
-| SnapMem: 3D Scene Memory for Embodied Exploration | OpenReview | 2024 | [[Paper]](https://openreview.net/forum?id=mz8unSsSsB) |
-| Embodied-RAG: General Non-parametric Embodied Memory for Retrieval and Generation | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2409.18313) |
-| ConceptFusion: Open-set Multimodal 3D Mapping | RSS | 2023 | [[Paper]](https://www.roboticsproceedings.org/rss19/p066.pdf) [[Project]](https://concept-fusion.github.io/) |
-| Hierarchical Representations and Explicit Memory: Learning Effective Navigation Policies on 3D Scene Graphs | ICRA | 2022 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/9812179/) |
-
-### Spatial Memory & SLAM
-
-Simultaneous Localization and Mapping(SLAM) is the most fundamental explicit type of memory. 
-
-| Paper | Venue | Year | Links |
-|-------|-------|------|-------|
-| Unsupervised Online Learning for Robotic Interestingness with Visual Memory | IEEE T-RO | 2021 | [[Paper]](https://arxiv.org/abs/2111.09793) [[Code]](https://github.com/wang-chen/interestingness) |
-| Probabilistic Data Association for Semantic SLAM | ICRA | 2017 | [[Paper]](https://ieeexplore.ieee.org/document/7989205) |
-| SLAM-Based Spatial Memory for Behavior-Based Robots | IFAC | 2015 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S2405896315026579) |
-| RGB-D Mapping: Using Kinect-Style Depth Cameras for Dense 3D Modeling of Indoor Environments | IJRR | 2012 | [[Paper]](https://journals.sagepub.com/doi/10.1177/0278364911434148) |
-
----
-
-## Memory for Navigation
-
-Memory is of great importance for navigation, there has been rich research on it. 
-
-| Paper | Venue | Year | Links |
-|-------|-------|------|-------|
-| Spatially-Enhanced Recurrent Memory for Long-Range Mapless Navigation via End-to-End Reinforcement Learning | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2506.05997) |
-| MemoNav: Working Memory Model for Visual Navigation | CVPR | 2024 | [[Paper]](https://arxiv.org/abs/2402.19161) |
-| Memory-Maze: Scenario Driven Benchmark and Visual Language Navigation Model for Guiding Blind People | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2405.07060) |
-| Visual Language Maps for Robot Navigation (VLMaps) | ICRA | 2023 | [[Paper]](https://arxiv.org/abs/2210.05714) [[Project]](https://vlmaps.github.io/) |
-| Emergence of Maps in the Memories of Blind Navigation Agents | ICLR | 2023 | [[Paper]](https://arxiv.org/abs/2301.13261) [[Project]](https://wijmans.xyz/publication/eom/) |
-| Memory-Augmented Reinforcement Learning for Image-Goal Navigation | IROS | 2022 | [[Paper]](https://arxiv.org/abs/2101.05181) |
-| Structured Scene Memory for Vision-Language Navigation | CVPR | 2021 | [[Paper]](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Structured_Scene_Memory_for_Vision-Language_Navigation_CVPR_2021_paper.pdf) |
-| Visual Graph Memory with Unsupervised Representation for Visual Navigation | ICCV | 2021 | [[Paper]](https://openaccess.thecvf.com/content/ICCV2021/papers/Kwon_Visual_Graph_Memory_With_Unsupervised_Representation_for_Visual_Navigation_ICCV_2021_paper.pdf) |
-| Deep Visual Odometry With Adaptive Memory | TPAMI | 2020 | [[Paper]](https://arxiv.org/abs/2008.01655) |
-| MultiON: Benchmarking Semantic Map Memory using Multi-Object Navigation | NeurIPS | 2020 | [[Paper]](https://arxiv.org/abs/2012.03912) |
-| Scene Memory Transformer for Embodied Agents in Long-Horizon Tasks | CVPR | 2019 | [[Paper]](https://openaccess.thecvf.com/content_CVPR_2019/html/Fang_Scene_Memory_Transformer_for_Embodied_Agents_in_Long-Horizon_Tasks_CVPR_2019_paper.html) |
-| Visual Memory for Robust Path Following | NeurIPS | 2018 | [[Paper]](https://saurabhg.web.illinois.edu/pdfs/kumar2018visual.pdf) |
-| Cognitive Memory and Mapping in a Brain-like System for Robotic Navigation | Neural Networks | 2017 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0893608016301861) |
-| Learning Indoor Robot Navigation using Visual and Sensorimotor Map | PMC | 2013 | [[Paper]](https://pmc.ncbi.nlm.nih.gov/articles/PMC3791472/) |
-| Image-based Robot Navigation from an Image Memory | RAS | 2007 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0921889006001734) |
-| 3D Navigation based on a Visual Memory | ICRA | 2006 | [[Paper]](https://ieeexplore.ieee.org/document/1642112/) |
 
 ---
 
@@ -208,6 +166,32 @@ Memory is of great importance for navigation, there has been rich research on it
 | SAM2Act: Integrating Visual Foundation Model with A Memory Architecture for Robotic Manipulation | ICML | 2025 | [[Paper]](https://arxiv.org/abs/2501.18564) |
 | Out of Sight, Still in Mind: Reasoning and Planning about Unobserved Objects with Video Tracking Enabled Memory Models | ICRA | 2024 | [[Paper]](https://arxiv.org/abs/2309.15278) |
 | RoboEXP: Action-Conditioned Scene Graph via Interactive Exploration for Robotic Manipulation | CoRL | 2024 | [[Paper]](https://arxiv.org/abs/2402.15487) [[Project]](https://jianghanxiao.github.io/roboexp-web/) |
+
+---
+
+## Memory for Navigation
+
+Memory is of great importance for navigation, there has been rich research on it. 
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| Spatially-Enhanced Recurrent Memory for Long-Range Mapless Navigation via End-to-End Reinforcement Learning | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2506.05997) |
+| MemoNav: Working Memory Model for Visual Navigation | CVPR | 2024 | [[Paper]](https://arxiv.org/abs/2402.19161) |
+| Memory-Maze: Scenario Driven Benchmark and Visual Language Navigation Model for Guiding Blind People | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2405.07060) |
+| Visual Language Maps for Robot Navigation (VLMaps) | ICRA | 2023 | [[Paper]](https://arxiv.org/abs/2210.05714) [[Project]](https://vlmaps.github.io/) |
+| Emergence of Maps in the Memories of Blind Navigation Agents | ICLR | 2023 | [[Paper]](https://arxiv.org/abs/2301.13261) [[Project]](https://wijmans.xyz/publication/eom/) |
+| Memory-Augmented Reinforcement Learning for Image-Goal Navigation | IROS | 2022 | [[Paper]](https://arxiv.org/abs/2101.05181) |
+| Structured Scene Memory for Vision-Language Navigation | CVPR | 2021 | [[Paper]](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Structured_Scene_Memory_for_Vision-Language_Navigation_CVPR_2021_paper.pdf) |
+| Visual Graph Memory with Unsupervised Representation for Visual Navigation | ICCV | 2021 | [[Paper]](https://openaccess.thecvf.com/content/ICCV2021/papers/Kwon_Visual_Graph_Memory_With_Unsupervised_Representation_for_Visual_Navigation_ICCV_2021_paper.pdf) |
+| Deep Visual Odometry With Adaptive Memory | TPAMI | 2020 | [[Paper]](https://arxiv.org/abs/2008.01655) |
+| MultiON: Benchmarking Semantic Map Memory using Multi-Object Navigation | NeurIPS | 2020 | [[Paper]](https://arxiv.org/abs/2012.03912) |
+| Scene Memory Transformer for Embodied Agents in Long-Horizon Tasks | CVPR | 2019 | [[Paper]](https://openaccess.thecvf.com/content_CVPR_2019/html/Fang_Scene_Memory_Transformer_for_Embodied_Agents_in_Long-Horizon_Tasks_CVPR_2019_paper.html) |
+| Visual Memory for Robust Path Following | NeurIPS | 2018 | [[Paper]](https://saurabhg.web.illinois.edu/pdfs/kumar2018visual.pdf) |
+| Cognitive Memory and Mapping in a Brain-like System for Robotic Navigation | Neural Networks | 2017 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0893608016301861) |
+| Learning Indoor Robot Navigation using Visual and Sensorimotor Map | PMC | 2013 | [[Paper]](https://pmc.ncbi.nlm.nih.gov/articles/PMC3791472/) |
+| Image-based Robot Navigation from an Image Memory | RAS | 2007 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0921889006001734) |
+| 3D Navigation based on a Visual Memory | ICRA | 2006 | [[Paper]](https://ieeexplore.ieee.org/document/1642112/) |
+
 ---
 
 ## Memory for Locomotion
@@ -215,7 +199,34 @@ Memory is of great importance for navigation, there has been rich research on it
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
 
+---
 
+
+## Spatial & Scene Memory
+
+### 3D Scene Memory
+
+Representing and reasoning about 3D environments.
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| 3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning | CVPR | 2025 | [[Paper]](https://arxiv.org/abs/2411.17735) [[Project]](https://umass-embodied-agi.github.io/3D-Mem/) |
+| What Is The Best 3D Scene Representation for Robotics? | arXiv | 2025 | [[Paper]](https://arxiv.org/html/2512.03422v1) |
+| SnapMem: 3D Scene Memory for Embodied Exploration | OpenReview | 2024 | [[Paper]](https://openreview.net/forum?id=mz8unSsSsB) |
+| Embodied-RAG: General Non-parametric Embodied Memory for Retrieval and Generation | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2409.18313) |
+| ConceptFusion: Open-set Multimodal 3D Mapping | RSS | 2023 | [[Paper]](https://www.roboticsproceedings.org/rss19/p066.pdf) [[Project]](https://concept-fusion.github.io/) |
+| Hierarchical Representations and Explicit Memory: Learning Effective Navigation Policies on 3D Scene Graphs | ICRA | 2022 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/9812179/) |
+
+### Spatial Memory & SLAM
+
+Simultaneous Localization and Mapping(SLAM) is the most fundamental explicit type of memory. 
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| Unsupervised Online Learning for Robotic Interestingness with Visual Memory | IEEE T-RO | 2021 | [[Paper]](https://arxiv.org/abs/2111.09793) [[Code]](https://github.com/wang-chen/interestingness) |
+| Probabilistic Data Association for Semantic SLAM | ICRA | 2017 | [[Paper]](https://ieeexplore.ieee.org/document/7989205) |
+| SLAM-Based Spatial Memory for Behavior-Based Robots | IFAC | 2015 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S2405896315026579) |
+| RGB-D Mapping: Using Kinect-Style Depth Cameras for Dense 3D Modeling of Indoor Environments | IJRR | 2012 | [[Paper]](https://journals.sagepub.com/doi/10.1177/0278364911434148) |
 
 
 ---
@@ -265,16 +276,6 @@ World models that incorporate memory for prediction and planning.
 
 ---
 
-## Working Memory & Short-term Memory
-
-| Paper | Venue | Year | Links |
-|-------|-------|------|-------|
-| An Incremental Learning Model for Mobile Robot: From Short-term Memory to Long-term Memory | IEEE TAI | 2021 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/9665293/) |
-| A Working Memory Model Improves Cognitive Control in Agents and Robots | COGSYS | 2018 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S1389041717300943) |
-| Short-term Memory Mechanisms in Neural Network Learning of Robot Navigation Tasks | IEEE | 2010 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/5418323/) |
-| A Hierarchical Autonomous Robot Controller for Learning and Memory | Adaptive Behavior | 2009 | [[Paper]](https://journals.sagepub.com/doi/abs/10.1177/1059712309105814) |
-
----
 
 ## Benchmarks & Evaluation
 
