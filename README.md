@@ -200,9 +200,9 @@ Memory is of great importance for navigation, there has been rich research on it
 |-------|-------|------|-------|
 | LocoFormer: Generalist Locomotion via Long-context Adaptation | CoRL | 2025 | [[Paper]](https://arxiv.org/abs/2509.23745) [[Project]](https://generalist-locomotion.github.io/) |
 | Sim-to-Real Transfer for Quadrupedal Locomotion via Terrain Transformer (TERT) | RA-L | 2023 | [[Paper]](https://arxiv.org/abs/2212.07740) |
-| Learning Vision-Guided Quadrupedal Locomotion End-to-End with Cross-Modal Transformers (LocoTransformer) | ICLR | 2022 | [[Paper]](https://arxiv.org/abs/2204.10328) [[Project]](https://rchalyang.github.io/LocoTransformer/) |
+| Learning Vision-Guided Quadrupedal Locomotion End-to-End with Cross-Modal Transformers (LocoTransformer) | ICLR | 2022 | [[Paper]](https://arxiv.org/abs/2107.03996) [[Project]](https://rchalyang.github.io/LocoTransformer/) |
 | RMA: Rapid Motor Adaptation for Legged Robots | RSS | 2021 | [[Paper]](https://arxiv.org/abs/2107.04034) [[Project]](https://ashish-kmr.github.io/rma-legged-robots/) |
-| Rapidly Adaptable Legged Robots via Evolutionary Meta-Learning | IROS | 2020 | [[Paper]](https://arxiv.org/abs/2003.01239) [[Project]](https://www.google.com/search?q=https://sites.google.com/view/es-maml) |
+| Rapidly Adaptable Legged Robots via Evolutionary Meta-Learning | IROS | 2020 | [[Paper]](https://arxiv.org/abs/2003.01239) [[Blog]](https://research.google/blog/exploring-evolutionary-meta-learning-in-robotics/) |
 
 
 ---
