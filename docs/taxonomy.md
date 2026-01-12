@@ -44,17 +44,21 @@ Semantic memory represents general knowledge, facts, object affordances, and tas
 | Utilizing a Deep Neural Network for Robot Semantic Classification | Scientific Reports | 2025 | [[Paper]](https://www.nature.com/articles/s41598-025-07921-7) |
 | Learning Spatially Semantic Representations for Cognitive Robot Navigation | Robotics and Autonomous Systems | 2013 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0921889013001346) |
 
-### Long-term / Lifelong Memory
+### Long-term Memory
 
-Long-term memory enables continuous accumulation of knowledge across tasks and sessions, supporting lifelong learning and adaptation without catastrophic forgetting.
+Long-term memory enables continuous accumulation of knowledge across tasks and sessions, supporting lifelong learning and adaptation without catastrophic forgetting. It is usually implemented by experience replay, skill transfer, or continual learning.
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
 | Preserving and Combining Knowledge in Robotic Lifelong Reinforcement Learning | Nature Machine Intelligence | 2025 | [[Paper]](https://www.nature.com/articles/s42256-025-00983-2) |
-| Towards General Purpose Robots at Scale: Lifelong Learning and Learning to Use Memory | PhD Thesis | 2024 | [[Paper]](https://arxiv.org/abs/2501.10395) |
+| LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning | NeurIPS | 2023 | [[Paper]](https://arxiv.org/abs/2306.03310) |
 | Online Active Continual Learning for Robotic Lifelong Object Recognition | IEEE T-NNLS | 2023 | [[Paper]](https://ieeexplore.ieee.org/document/10251045/) |
-| DRAE: Dynamic Retrieval-Augmented Expert Networks for Lifelong Learning and Task Adaptation in Robotics | ACL | 2025 | [[Paper]](https://aclanthology.org/2025.acl-long.1127/) |
-| Effective Generative Replay with Strong Memory for Continual Learning | Knowledge-Based Systems | 2025 | [[Paper]](https://www.sciencedirect.com/science/article/abs/pii/S0950705125005234) |
+| Lifelong Robotic Reinforcement Learning by Retaining Experiences | CoLLAs | 2022 | [[Paper]](https://proceedings.mlr.press/v199/xie22a.html) |
+| A lifelong learning approach to mobile robot navigation | ICRA | 2021 | [[Paper]](https://arxiv.org/pdf/2007.14486) |
+| Learning an Embedding Space for Transferable Robot Skills | ICLR | 2018 | [[Paper]](https://openreview.net/forum?id=rk07ZXZRb) |
+| RoboEarth: A World Wide Web for Robots | IEEE RA Mag | 2011 | [[Paper]](https://ieeexplore.ieee.org/document/5940276) |
+| RatSLAM: A hippocampal model for simultaneous localization and mapping | ICRA | 2004 | [[Paper]](https://ieeexplore.ieee.org/document/1307183) |
+| Lifelong robot learning | RAS | 1995 | [[Paper]](https://www.sciencedirect.com/science/article/pii/092188909500004Y) [[Project]](https://www.roboticslab.tue.nl/research/projects/lifelong-robot-learning/) |
 
 ---
 
@@ -180,9 +184,11 @@ Memory systems for spatial mapping, localization, and navigation tasks.
 ### Active Perception
 
 Memory-enhanced perception systems that actively gather and utilize information.
+> Note: this category needs more research. Will upgrade with #Awesome-Active-Perception. 
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| AAWR: Real World Reinforcement Learning of Active Perception Behaviors | NeurIPS | 2025 | [[Paper]](https://penn-pal-lab.github.io/aawr/) |
 | EASE: Embodied Active Event Perception via Self-Supervision | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2506.17516) |
 | MP5: A Multi-Modal Open-Ended Embodied System in Minecraft via Active Perception | IEEE TPAMI | 2024 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/10657187/) |
 

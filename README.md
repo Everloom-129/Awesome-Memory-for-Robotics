@@ -16,9 +16,10 @@ Here we organized a list of resources on **memory for robotics**, including pape
 
 - [Surveys & Overviews](#surveys--overviews)
 - [Memory Systems & Cognitive Architecture](#memory-systems--cognitive-architecture)
-- [Contexual Memory](#contexual-memory)
-- [Episodic Memory](#episodic-memory)
-- [Semantic Memory](#semantic-memory)
+  - [Contexual Memory](#contexual-memory)
+  - [Episodic Memory](#episodic-memory)
+  - [Semantic Memory](#semantic-memory)
+  - [Long-term Memory](#long-term-memory)
 - [Memory for Manipulation](#memory-for-manipulation)
   - [VLAs](#vlas)
   - [Mobile Manipulation](#mobile-manipulation)
@@ -46,7 +47,7 @@ Memory in robotics often mixes multiple axes:
   - *Contexual memory* (within-episode, short-term working memory)
   - *Episodic memory* (experience replay / trajectories / videos)
   - *Semantic memory* (facts, object affordances, task graphs)
-  - *Long-term / lifelong memory* (continual learning across tasks)
+  - *Long-term memory* (stable knowledge across tasks)
 - **Representation**
   - key-value / slot memory, RNN / LSTM / Transformer state
   - retrieval over embeddings (RAG / vector DB)
@@ -59,8 +60,6 @@ Memory in robotics often mixes multiple axes:
   - safety & failure recovery (remember mistakes)
 
 Read more: [`docs/taxonomy.md`](docs/taxonomy.md)
-
----
 
 
 ---
@@ -81,13 +80,11 @@ There hasn't been a comprehensive survey on memory for robotics, we hope this li
 
 ## Memory Systems & Cognitive Architecture
 
-Often inspired by human memory architecture.
+People built memory for robots from our cognitive science. Here are some classical papers:
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
-| RoboMemory: A Brain-inspired Multi-memory Agentic Framework for Lifelong Learning | OpenReview | 2025 | [[Paper]](https://openreview.net/forum?id=HHGzG1Choi) |
-| Structured Memory for Robots | EmergentMind | 2025 | [[Paper]](https://www.emergentmind.com/topics/structured-memory-system-for-robots) |
-| A Memory System of a Robot Cognitive Architecture and its Implementation in ArmarX | RAS | 2023 | [[Paper]](https://www.sciencedirect.com/science/article/abs/pii/S0921889023000544) [[PDF]](https://h2t.iar.kit.edu/pdf/Peller2023.pdf) |
+| A Memory System of a Robot Cognitive Architecture and its Implementation in ArmarX | RAS | 2023 | [[Paper]](https://www.sciencedirect.com/science/article/abs/pii/S0921889023000544) |
 | A Memory System for a Conscious Robot | Frontiers | 2018 | [[Paper]](https://pmc.ncbi.nlm.nih.gov/articles/PMC7805698/) |
 | Memory as the Substrate of Cognition: A Developmental Cognitive Robotics Perspective | ResearchGate | 2015 | [[Paper]](https://www.researchgate.net/profile/Paul-Baxter-6/publication/277799284) |
 | Dynamic Learning in Cognitive Robotics through a Procedural Long Term Memory | EAAI | 2013 | [[Paper]](https://link.springer.com/article/10.1007/s12530-013-9079-4) |
@@ -95,7 +92,12 @@ Often inspired by human memory architecture.
 
 ---
 
-## Contexual Memory
+Further, I divide memory into three categories: contexual memory, episodic memory, and semantic memory.
+
+### Contexual Memory
+
+Working memory maintains task-relevant information during execution. It enables robots to track object states, maintain spatial awareness, and hold intermediate computation results. It is usually implemented by keyframe, history and context-window. 
+
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
@@ -109,12 +111,15 @@ Often inspired by human memory architecture.
 
 ---
 
-## Episodic Memory
+### Episodic Memory
+
+Episodic memory stores specific events and experiences from the robot's past, enabling recall of particular situations, trajectories, and outcomes. It is usually implemented by memory banks, replay buffers, or latent tokens.
+
 
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
-| Beyond Recall: Evaluating Forgetting Mechanisms for Multi-Robot Systems | H2T | 2025 | [[Paper]](https://h2t.iar.kit.edu/pdf/Plewnia2025.pdf) |
+| MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action Models for Robotic Manipulation | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2508.19236) |
 | Forgetting in Robotic Episodic Long-Term Memory | ECAI | 2024 | [[Paper]](https://events.infovaya.com/uploads/documents/pdfviewer/0a/40/131281-2412.pdf) |
 | Long Horizon Episodic Decision Making for Cognitively Inspired Robots | COGSYS | 2024 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S1389041724000536) |
 | Episodic Memory Model for Learning Robotic Manipulation | arXiv | 2021 | [[Paper]](https://arxiv.org/abs/2104.10218) |
@@ -125,19 +130,38 @@ Often inspired by human memory architecture.
 
 ---
 
-## Semantic Memory
+### Semantic Memory
 
-Language provides robots with structured knowledge about concepts, objects, and their relationships.
+Language provides robots with structured knowledge about concepts, objects, and their relationships. It is usually implemented by Neural Symbolic Model, Chain of Thought Reasoning, or Scene Graphs.
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| GraSP-VLA: Graph-based Symbolic Action Representation for Long-Horizon Planning with VLA Policies | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2511.04357) |
 | Enter the Mind Palace: Reasoning and Planning for Long-term Active Embodied Question Answering | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2507.12846) |
 | Memory-Centric Embodied Question Answering | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2505.13948) |
 | CRESTA: A Cognitivist Framework for Semantic-driven Task Awareness | RAS | 2025 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0921889025004002) |
 | A Semantic Memory System for Task Planning under Uncertainties | IROS | 2010 | [[Paper]](https://ieeexplore.ieee.org/document/5650956/) |
+| KnowRob: Knowledge processing for autonomous robots | IROS | 2009 | [[Paper]](https://www.google.com/search?q=https://mediatum.ub.tum.de/doc/1285223/1285223.pdf) |
 | Robot Task Planning using Semantic Maps | RAS | 2008 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0921889008001188) |
 
 ---
+
+### Long-term Memory
+
+Long-term memory enables continuous accumulation of knowledge across tasks and sessions, supporting lifelong learning and adaptation without catastrophic forgetting. It is usually implemented by experience replay, skill transfer, or continual learning.
+
+
+| Paper | Venue | Year | Links |
+|-------|-------|------|-------|
+| Preserving and Combining Knowledge in Robotic Lifelong Reinforcement Learning | Nature Machine Intelligence | 2025 | [[Paper]](https://www.nature.com/articles/s42256-025-00983-2) |
+| LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning | NeurIPS | 2023 | [[Paper]](https://arxiv.org/abs/2306.03310) |
+| Online Active Continual Learning for Robotic Lifelong Object Recognition | IEEE T-NNLS | 2023 | [[Paper]](https://ieeexplore.ieee.org/document/10251045/) |
+| Lifelong Robotic Reinforcement Learning by Retaining Experiences | CoLLAs | 2022 | [[Paper]](https://proceedings.mlr.press/v199/xie22a.html) |
+| A lifelong learning approach to mobile robot navigation | ICRA | 2021 | [[Paper]](https://arxiv.org/pdf/2007.14486) |
+| Learning an Embedding Space for Transferable Robot Skills | ICLR | 2018 | [[Paper]](https://openreview.net/forum?id=rk07ZXZRb) |
+| RoboEarth: A World Wide Web for Robots | IEEE RA Mag | 2011 | [[Paper]](https://ieeexplore.ieee.org/document/5940276) |
+| RatSLAM: A hippocampal model for simultaneous localization and mapping | ICRA | 2004 | [[Paper]](https://ieeexplore.ieee.org/document/1307183) |
+| Lifelong robot learning | RAS | 1995 | [[Paper]](https://www.sciencedirect.com/science/article/pii/092188909500004Y) [[Project]](https://www.roboticslab.tue.nl/research/projects/lifelong-robot-learning/) |
 
 ## Memory for Manipulation
 
@@ -151,6 +175,7 @@ Because non-markovian property makes VLAs prone to overfit, it's a huge challeng
 | HAMLET: Switch your Vision-Language-Action Model into a History-Aware Policy | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2510.00695) [[Project]](https://myungkyukoo.github.io/hamlet/) |
 | HiF-VLA: Hindsight, Insight and Foresight through Motion Representation for Vision-Language-Action Models | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2512.09928)
 | CronusVLA: Towards Efficient and Robust Manipulation via Multi-Frame Vision-Language-Action Modeling | ArKiv | 2025 | [[Paper]](https://arxiv.org/abs/2506.19816) [[Project]](https://lihaohn.github.io/CronusVLA.github.io/) |
+| GraSP-VLA: Graph-based Symbolic Action Representation for Long-Horizon Planning with VLA Policies | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2511.04357) |
 | MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action Models for Robotic Manipulation | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2508.19236) |
 
 
@@ -260,8 +285,6 @@ World models that incorporate memory for prediction and planning.
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
-| Effective Generative Replay with Strong Memory for Continual Learning | KBS | 2025 | [[Paper]](https://www.sciencedirect.com/science/article/abs/pii/S0950705125005234) |
-| AdaER: An Adaptive Experience Replay Approach for Continual Lifelong Learning | Neurocomputing | 2024 | [[Paper]](https://www.sciencedirect.com/science/article/abs/pii/S0925231223013279) |
 | Lifelong Robotic Reinforcement Learning by Retaining Experiences | CoLLAs | 2022 | [[Paper]](https://proceedings.mlr.press/v199/xie22a.html) |
 | Selective Experience Replay for Lifelong Learning | AAAI | 2018 | [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/11595) |
 
@@ -280,7 +303,7 @@ World models that incorporate memory for prediction and planning.
 | Efficient Policy Learning by Extracting Transferable Robot Skills | CoRL | 2024 | [[Paper]](https://arxiv.org/html/2406.17768v3) |
 | Unsupervised Skill Transfer Learning for Autonomous Robots | RAS | 2021 | [[Paper]](https://www.sciencedirect.com/science/article/abs/pii/S0921889021001202) |
 | Skill Transfer Learning for Autonomous Robots and Human-Robot Cooperation: A Survey | RAS | 2020 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0921889019309972) |
-Learning an Embedding Space for Transferable Robot Skills | ICLR | 2018 | [[Paper]](https://openreview.net/forum?id=rk07ZXZRb) |
+| Learning an Embedding Space for Transferable Robot Skills | ICLR | 2018 | [[Paper]](https://openreview.net/forum?id=rk07ZXZRb) |
 
 ---
 
