@@ -334,7 +334,7 @@ If you find this repository useful, please consider citing:
 
 ```bibtex
 @misc{awesome-memory-for-robotics,
-  author = {Jie Wang, Siming He},
+  author = {Jie Wang},
   title = {Awesome Memory for Robotics},
   year = {2025},
   publisher = {GitHub},
