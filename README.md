@@ -246,6 +246,8 @@ Representing and reasoning about 3D environments.
 |-------|-------|------|-------|
 | 3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning | CVPR | 2025 | [[Paper]](https://arxiv.org/abs/2411.17735) [[Project]](https://umass-embodied-agi.github.io/3D-Mem/) |
 | What Is The Best 3D Scene Representation for Robotics? | arXiv | 2025 | [[Paper]](https://arxiv.org/html/2512.03422v1) |
+| 3D-Spatial MultiModel Memory | ICLR | 2025 | [[Paper]](https://arxiv.org/abs/2503.16413) [[Project]](https://m3-spatial-memory.github.io/) |
+| PreSight: Enhancing Autonomous Vehicle Perception with City-Scale NeRF Priors | ECCV | 2024 | [[Paper]](https://arxiv.org/abs/2403.09079) |
 | SnapMem: 3D Scene Memory for Embodied Exploration | OpenReview | 2024 | [[Paper]](https://openreview.net/forum?id=mz8unSsSsB) |
 | Embodied-RAG: General Non-parametric Embodied Memory for Retrieval and Generation | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2409.18313) |
 | ConceptFusion: Open-set Multimodal 3D Mapping | RSS | 2023 | [[Paper]](https://www.roboticsproceedings.org/rss19/p066.pdf) [[Project]](https://concept-fusion.github.io/) |
