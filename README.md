@@ -92,7 +92,7 @@ People built memory for robots from our cognitive science. Here are some classic
 
 ---
 
-Further, I divide memory into three categories: contexual memory, episodic memory, and semantic memory.
+Further, I divide memory into threfour categories: contexual memory, episodic memory, semantic memory, and long-horizon memory. 
 
 ### Contexual Memory
 
