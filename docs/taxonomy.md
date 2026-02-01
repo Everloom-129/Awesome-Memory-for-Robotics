@@ -188,6 +188,7 @@ Memory-enhanced perception systems that actively gather and utilize information.
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| Searching in Space and Time: Unified Memory-Action Loops for Open-World Object Retrieval | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2511.14004) [[Project]](https://amrl.cs.utexas.edu/STAR/) |
 | AAWR: Real World Reinforcement Learning of Active Perception Behaviors | NeurIPS | 2025 | [[Paper]](https://penn-pal-lab.github.io/aawr/) |
 | EASE: Embodied Active Event Perception via Self-Supervision | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2506.17516) |
 | MP5: A Multi-Modal Open-Ended Embodied System in Minecraft via Active Perception | IEEE TPAMI | 2024 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/10657187/) |

@@ -204,6 +204,18 @@ Benchmark for LLMs in embodied decision making.
 | **Venue** | NeurIPS 2024 |
 | **Links** | [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2024/hash/b631da756d1573c24c9ba9c702fde5a9-Abstract-Datasets_and_Benchmarks_Track.html) |
 
+#### STARBench
+
+A benchmark for spatiotemporal object search in dynamic household environments.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 360 tasks across visible, interactive, and commonsense settings |
+| **Focus** | Spatiotemporal object search |
+| **Platform** | Simulated and real (Tiago robot) |
+| **Year** | 2025 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2511.14004) [[Project]](https://amrl.cs.utexas.edu/STAR/) |
+
 ### Navigation Benchmarks
 
 #### ReMEmbR
@@ -328,6 +340,7 @@ Recent work on robot reliability in real-world settings:
 | BEHAVIOR-1K | 2024 | 1,000 | State tracking | High |
 | Mini-BEHAVIOR | 2023 | 20 | Long-horizon | High |
 | ReMEmbR | 2025 | Navigation QA | Spatio-temporal | High |
+| STARBench | 2025 | 360 | Spatiotemporal object search | High + Low |
 
 ---
 

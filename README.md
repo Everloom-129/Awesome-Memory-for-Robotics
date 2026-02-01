@@ -183,6 +183,7 @@ Because non-markovian property makes VLAs prone to overfit, it's a huge challeng
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| Searching in Space and Time: Unified Memory-Action Loops for Open-World Object Retrieval | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2511.14004) [[Project]](https://amrl.cs.utexas.edu/STAR/) |
 | DynaMem: Online Dynamic Spatio-Semantic Memory for Open World Mobile Manipulation | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2411.04999) |
 | CLIP-Fields: Weakly Supervised Semantic Fields for Robotic Memory | RSS | 2023 | [[Paper]](https://www.roboticsproceedings.org/rss19/p074.pdf) [[Project]](https://mahis.life/clip-fields) |
 
@@ -248,6 +249,7 @@ Representing and reasoning about 3D environments.
 | What Is The Best 3D Scene Representation for Robotics? | arXiv | 2025 | [[Paper]](https://arxiv.org/html/2512.03422v1) |
 | SnapMem: 3D Scene Memory for Embodied Exploration | OpenReview | 2024 | [[Paper]](https://openreview.net/forum?id=mz8unSsSsB) |
 | Embodied-RAG: General Non-parametric Embodied Memory for Retrieval and Generation | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2409.18313) |
+| Searching in Space and Time: Unified Memory-Action Loops for Open-World Object Retrieval | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2511.14004) [[Project]](https://amrl.cs.utexas.edu/STAR/) |
 | ConceptFusion: Open-set Multimodal 3D Mapping | RSS | 2023 | [[Paper]](https://www.roboticsproceedings.org/rss19/p066.pdf) [[Project]](https://concept-fusion.github.io/) |
 | Hierarchical Representations and Explicit Memory: Learning Effective Navigation Policies on 3D Scene Graphs | ICRA | 2022 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/9812179/) |
 
