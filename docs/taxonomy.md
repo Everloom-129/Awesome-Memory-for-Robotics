@@ -18,6 +18,9 @@ Working memory maintains task-relevant information during immediate execution, t
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| MEM: Multi-Scale Embodied Memory for Vision Language Action Models | Physical Intelligence | 2026 | [[Paper]](https://www.pi.website/download/Mem.pdf) [[Project]](https://www.pi.website/research/memory) |
+| ReMem-VLA: Empowering Vision-Language-Action Model with Memory via Dual-Level Recurrent Queries | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2603.12942) |
+| Beyond Short-Horizon: VQ-Memory for Robust Long-Horizon Manipulation in Non-Markovian Simulation Benchmarks | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2603.09513) [[Project]](https://vqmemory.github.io/) |
 | Scaling Short-Term Memory of Visuomotor Policies (PRISM) | NeurIPS | 2025 | [[Paper]](https://openreview.net/forum?id=5SMNtmJFGa) |
 | MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2505.00675) |
 | Memo: Training Memory-Efficient Embodied Agents | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2510.19732) |
@@ -28,6 +31,8 @@ Episodic memory stores specific events and experiences from the robot's past, en
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| Chameleon: Episodic Memory for Long-Horizon Robotic Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2603.24576) |
+| HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2604.18791) |
 | Episodic Memory Banks for Lifelong Robot Learning | CoRL | 2025 | [[Paper]](https://openreview.net/forum?id=BBgDA4y0B9) |
 | Deep Episodic Memory: Encoding, Recalling, and Predicting Episodic Experiences for Robot Action Execution | IEEE RA-L | 2018 | [[Paper]](https://ieeexplore.ieee.org/abstract/document/8421022/) |
 | Synthesizing the Temporal Self: Robotic Models of Episodic and Semantic Memory | Phil. Trans. R. Soc. B | 2024 | [[Paper]](https://royalsocietypublishing.org/doi/10.1098/rstb.2023.0415) |
@@ -40,6 +45,7 @@ Semantic memory represents general knowledge, facts, object affordances, and tas
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| EchoVLA: Synergistic Declarative Memory for VLA-Driven Mobile Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2511.18112) |
 | ART Neural Network-based Integration of Episodic Memory and Semantic Memory for Task Planning | Autonomous Robots | 2019 | [[Paper]](https://link.springer.com/article/10.1007/s10514-019-09868-x) |
 | Utilizing a Deep Neural Network for Robot Semantic Classification | Scientific Reports | 2025 | [[Paper]](https://www.nature.com/articles/s41598-025-07921-7) |
 | Learning Spatially Semantic Representations for Cognitive Robot Navigation | Robotics and Autonomous Systems | 2013 | [[Paper]](https://www.sciencedirect.com/science/article/pii/S0921889013001346) |
@@ -50,6 +56,12 @@ Long-term memory enables continuous accumulation of knowledge across tasks and s
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| MEM: Multi-Scale Embodied Memory for Vision Language Action Models | Physical Intelligence | 2026 | [[Paper]](https://www.pi.website/download/Mem.pdf) [[Project]](https://www.pi.website/research/memory) |
+| ReMem-VLA: Empowering Vision-Language-Action Model with Memory via Dual-Level Recurrent Queries | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2603.12942) |
+| Chameleon: Episodic Memory for Long-Horizon Robotic Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2603.24576) |
+| HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2604.18791) |
+| EchoVLA: Synergistic Declarative Memory for VLA-Driven Mobile Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2511.18112) |
+| RoboMemory: A Brain-inspired Multi-memory Agentic Framework for Interactive Environmental Learning in Physical Embodied Systems | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2508.01415) |
 | Preserving and Combining Knowledge in Robotic Lifelong Reinforcement Learning | Nature Machine Intelligence | 2025 | [[Paper]](https://www.nature.com/articles/s42256-025-00983-2) |
 | LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning | NeurIPS | 2023 | [[Paper]](https://arxiv.org/abs/2306.03310) |
 | Online Active Continual Learning for Robotic Lifelong Object Recognition | IEEE T-NNLS | 2023 | [[Paper]](https://ieeexplore.ieee.org/document/10251045/) |
@@ -124,6 +136,11 @@ Memory used to condition policy execution by retrieving relevant past experience
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| MEM: Multi-Scale Embodied Memory for Vision Language Action Models | Physical Intelligence | 2026 | [[Paper]](https://www.pi.website/download/Mem.pdf) [[Project]](https://www.pi.website/research/memory) |
+| ReMem-VLA: Empowering Vision-Language-Action Model with Memory via Dual-Level Recurrent Queries | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2603.12942) |
+| HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2604.18791) |
+| EchoVLA: Synergistic Declarative Memory for VLA-Driven Mobile Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2511.18112) |
+| Beyond Short-Horizon: VQ-Memory for Robust Long-Horizon Manipulation in Non-Markovian Simulation Benchmarks | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2603.09513) [[Project]](https://vqmemory.github.io/) |
 | STRAP: Robot Sub-Trajectory Retrieval for Augmented Policy Learning | ICLR | 2025 | [[Paper]](https://arxiv.org/abs/2412.15182) |
 | MemoryVLA: Dual-Memory for Robotic Manipulation | arXiv | 2025 | [[Paper]](https://www.emergentmind.com/topics/memoryvla) |
 | Planning with an Embodied Learnable Memory | NeurIPS | 2025 | [[Paper]](https://openreview.net/forum?id=79BOATBal9) |
@@ -167,6 +184,16 @@ Memory approaches enabling robots to perform complex, multi-step manipulation ta
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| MEM: Multi-Scale Embodied Memory for Vision Language Action Models | Physical Intelligence | 2026 | [[Paper]](https://www.pi.website/download/Mem.pdf) [[Project]](https://www.pi.website/research/memory) |
+| Chameleon: Episodic Memory for Long-Horizon Robotic Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2603.24576) |
+| HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2604.18791) |
+| EchoVLA: Synergistic Declarative Memory for VLA-Driven Mobile Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2511.18112) |
+| Beyond Short-Horizon: VQ-Memory for Robust Long-Horizon Manipulation in Non-Markovian Simulation Benchmarks | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2603.09513) [[Project]](https://vqmemory.github.io/) |
+| RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies | ICML | 2026 | [[Paper]](https://arxiv.org/abs/2603.04639) [[Project]](https://robomme.github.io/) [[Code]](https://github.com/RoboMME/robomme_benchmark) |
+| RoboMemArena: A Comprehensive and Challenging Robotic Memory Benchmark | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2605.10921) [[Project]](https://robomemarena.github.io/) |
+| RMBench: Memory-Dependent Robotic Manipulation Benchmark with Insights into Policy Design | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2603.01229) [[Project]](https://rmbench.github.io/) [[Code]](https://github.com/RoboTwin-Platform/RMBench) |
+| Rethinking Progression of Memory State in Robotic Manipulation: An Object-Centric Perspective | AAAI | 2026 | [[Paper]](https://arxiv.org/abs/2511.11478) |
+| Gated Memory Policy | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2604.18933) [[Project]](https://gated-memory-policy.github.io/) |
 | Memory, Benchmark & Robots: A Benchmark for Solving Complex Tasks with RL (MIKASA-Robo) | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2502.10550) [[Code]](https://github.com/CognitiveAISystems/MIKASA-Robo) |
 | RoboCerebra: A Large-scale Benchmark for Long-horizon Robotic Manipulation | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2506.06677) |
 | VLABench: A Large-Scale Benchmark for Language-Conditioned Robotics Manipulation | ICCV | 2025 | [[Paper]](https://openaccess.thecvf.com/content/ICCV2025/html/Zhang_VLABench_A_Large-Scale_Benchmark_for_Language-Conditioned_Robotics_Manipulation_with_Long-Horizon_ICCV_2025_paper.html) |

@@ -141,6 +141,87 @@ Large-scale benchmark for long-horizon robotic manipulation with System 2 reason
 | **Year** | 2025 |
 | **Links** | [[Paper]](https://arxiv.org/abs/2506.06677) |
 
+#### RoboMemArena
+
+Large-scale robotic memory benchmark with multimodal memory annotations and paired real-world tasks.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 26 long-horizon tasks |
+| **Trajectory Length** | Average trajectory length exceeds 1,000 steps |
+| **Memory Challenge** | Partial observability, memory formation, keyframe recall, long-horizon task dynamics |
+| **Real-World Evaluation** | Paired real-world memory tasks |
+| **Year** | 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2605.10921) [[Project]](https://robomemarena.github.io/) |
+
+#### RoboMME
+
+Standardized benchmark for evaluating memory in robotic generalist policies.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 16 manipulation tasks |
+| **Memory Types** | Temporal, spatial, object, and procedural memory |
+| **Focus** | Comparing memory representations and integration strategies for VLA policies |
+| **Venue** | ICML 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2603.04639) [[Project]](https://robomme.github.io/) [[Code]](https://github.com/RoboMME/robomme_benchmark) |
+
+#### RMBench
+
+Simulation benchmark for memory-dependent robotic manipulation policy design.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 9 manipulation tasks |
+| **Focus** | Multiple levels of memory complexity and controlled ablations with Mem-0 |
+| **Platform** | RoboTwin-based simulation |
+| **Year** | 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2603.01229) [[Project]](https://rmbench.github.io/) [[Code]](https://github.com/RoboTwin-Platform/RMBench) |
+
+#### LIBERO-Mem
+
+Object-centric non-Markovian manipulation suite for stress-testing object-level memory.
+
+| Attribute | Details |
+|-----------|---------|
+| **Focus** | Object tracking and temporally sequenced subgoals |
+| **Memory Challenge** | Object-level partial observability and visually similar object instances |
+| **Venue** | AAAI 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2511.11478) |
+
+#### MemMimic
+
+Non-Markovian benchmark introduced with Gated Memory Policy.
+
+| Attribute | Details |
+|-----------|---------|
+| **Focus** | Imitation tasks with varying memory requirements |
+| **Memory Regimes** | In-trial working memory and cross-trial reference memory |
+| **Year** | 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2604.18933) [[Project]](https://gated-memory-policy.github.io/) |
+
+#### RuleSafe
+
+Non-Markovian articulated manipulation benchmark introduced with VQ-Memory.
+
+| Attribute | Details |
+|-----------|---------|
+| **Focus** | Safe unlocking tasks with key locks, password locks, and logic locks |
+| **Memory Challenge** | Temporal modeling, task-phase memory, multi-stage reasoning |
+| **Year** | 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2603.09513) [[Project]](https://vqmemory.github.io/) |
+
+#### LIBERO-Recovery
+
+Perturbation-injection protocol introduced with HELM for evaluating memory-conditioned failure recovery.
+
+| Attribute | Details |
+|-----------|---------|
+| **Focus** | Long-horizon VLA recovery under controlled perturbations |
+| **Memory Challenge** | Episodic memory, pre-execution verification, rollback and replanning |
+| **Year** | 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2604.18791) |
+
 #### VLABench
 
 Large-scale benchmark for language-conditioned robotics manipulation.
@@ -337,6 +418,13 @@ Recent work on robot reliability in real-world settings:
 | EmbodiedBench | 2025 | 1,128 | 6 capabilities | High + Low |
 | RoboCerebra | 2025 | Long-horizon | System 2 reasoning | High |
 | VLABench | 2025 | Language-conditioned | Long-horizon | High |
+| RoboMemArena | 2026 | 26 | Memory annotations and long-horizon physical evaluation | High + Low |
+| RoboMME | 2026 | 16 | Temporal/Spatial/Object/Procedural memory | Low |
+| RMBench | 2026 | 9 | Memory complexity and policy design ablations | Low |
+| LIBERO-Mem | 2026 | Object-centric tasks | Object-level non-Markovian memory | Low |
+| MemMimic | 2026 | Non-Markovian imitation | In-trial and cross-trial memory | Low |
+| RuleSafe | 2026 | Articulated manipulation | Non-Markovian task-phase memory | Low |
+| LIBERO-Recovery | 2026 | Failure recovery | Episodic memory and rollback | Low |
 | BEHAVIOR-1K | 2024 | 1,000 | State tracking | High |
 | Mini-BEHAVIOR | 2023 | 20 | Long-horizon | High |
 | ReMEmbR | 2025 | Navigation QA | Spatio-temporal | High |

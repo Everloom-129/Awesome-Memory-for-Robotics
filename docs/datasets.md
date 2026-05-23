@@ -126,6 +126,81 @@ Scalable framework for data generation and benchmarking in bimanual robotic mani
 | **Memory Challenge** | Coordinated long-horizon bimanual tasks |
 | **Links** | [[Project]](https://robotwin-platform.github.io/) |
 
+### RoboMME
+
+Large-scale manipulation dataset and benchmark for memory-augmented robotic generalist policies.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 16 manipulation tasks |
+| **Memory Types** | Temporal, spatial, object, and procedural memory |
+| **Memory Challenge** | History-dependent manipulation, counting, object permanence, reference, and imitation |
+| **Links** | [[Paper]](https://arxiv.org/abs/2603.04639) [[Project]](https://robomme.github.io/) [[GitHub]](https://github.com/RoboMME/robomme_benchmark) |
+
+### RoboMemArena
+
+Large-scale benchmark data for robotic memory with generated trajectories and memory annotations.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 26 long-horizon memory tasks |
+| **Annotations** | Subtask instructions and native keyframe annotations |
+| **Memory Challenge** | Memory formation, long-horizon partial observability, real-world memory evaluation |
+| **Links** | [[Paper]](https://arxiv.org/abs/2605.10921) [[Project]](https://robomemarena.github.io/) |
+
+### RMBench
+
+Memory-dependent manipulation benchmark built on RoboTwin.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 9 manipulation tasks |
+| **Platform** | RoboTwin-based simulation |
+| **Memory Challenge** | Multiple levels of memory complexity for policy design analysis |
+| **Links** | [[Paper]](https://arxiv.org/abs/2603.01229) [[Project]](https://rmbench.github.io/) [[GitHub]](https://github.com/RoboTwin-Platform/RMBench) |
+
+### LIBERO-Mem
+
+Object-centric benchmark suite for non-Markovian robotic manipulation.
+
+| Attribute | Details |
+|-----------|---------|
+| **Focus** | Object tracking and sequenced subgoals |
+| **Memory Challenge** | Object identity, object-level partial observability, persistent interaction history |
+| **Links** | [[Paper]](https://arxiv.org/abs/2511.11478) |
+
+### MemMimic
+
+Non-Markovian imitation benchmark introduced with Gated Memory Policy.
+
+| Attribute | Details |
+|-----------|---------|
+| **Focus** | Memory-dependent visuomotor imitation |
+| **Memory Regimes** | In-trial working memory and cross-trial reference memory |
+| **Links** | [[Paper]](https://arxiv.org/abs/2604.18933) [[Project]](https://gated-memory-policy.github.io/) |
+
+### Camo-Dataset
+
+Real-robot UR5e dataset introduced with Chameleon for episodic recall and memory-dependent manipulation.
+
+| Attribute | Details |
+|-----------|---------|
+| **Platform** | UR5e real robot |
+| **Tasks** | Episodic recall, spatial tracking, sequential manipulation |
+| **Memory Challenge** | Perceptual aliasing, geometry-grounded recall, long-horizon control |
+| **Links** | [[Paper]](https://arxiv.org/abs/2603.24576) |
+
+### MoMani
+
+Automated benchmark and trajectory-generation setup introduced with EchoVLA for long-horizon mobile manipulation.
+
+| Attribute | Details |
+|-----------|---------|
+| **Focus** | Mobile manipulation with navigation and manipulation |
+| **Data Generation** | MLLM-guided planning and feedback-driven refinement, supplemented with real-robot demonstrations |
+| **Memory Challenge** | Scene memory, episodic memory, changing spatial contexts |
+| **Links** | [[Paper]](https://arxiv.org/abs/2511.18112) |
+
 ---
 
 ## Navigation Datasets
