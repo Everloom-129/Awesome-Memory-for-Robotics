@@ -130,6 +130,19 @@ The first benchmark specifically designed for testing agent memory in robotic ma
 | SeqOfColors | Capacity | Remember sequential presentations |
 | ChainOfColors | Sequential | Recall ordered sequence |
 
+#### MIKASA-Robo-VLA
+
+Extension of MIKASA-Robo evaluating Vision-Language-Action models on memory-intensive tabletop manipulation tasks.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 90 memory tasks across 10 memory types |
+| **Memory Types** | Object, Spatial, Sequential, Capacity, and more |
+| **Platform** | ManiSkill3 with language-conditioned variants |
+| **Data** | 6M+ transitions for reproducible VLA training |
+| **Venue** | ICLR 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2502.10550) [[Project]](https://mikasarobo.github.io/) [[Code]](https://github.com/CognitiveAISystems/MIKASA-Robo) |
+
 #### RoboCerebra
 
 Large-scale benchmark for long-horizon robotic manipulation with System 2 reasoning.
@@ -285,6 +298,18 @@ Benchmark for LLMs in embodied decision making.
 | **Venue** | NeurIPS 2024 |
 | **Links** | [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2024/hash/b631da756d1573c24c9ba9c702fde5a9-Abstract-Datasets_and_Benchmarks_Track.html) |
 
+#### MemoryArena
+
+Benchmark for evaluating agent memory across interdependent multi-session agentic tasks, where agents acquire memory during interaction and rely on it in later sessions.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | Web navigation, planning with constraints, information search, formal reasoning |
+| **Memory Challenge** | Cross-session memory acquisition and retrieval in interdependent task chains |
+| **Key Finding** | Agents strong on long-context benchmarks fail at interdependent task structures |
+| **Year** | 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2602.16313) |
+
 #### STARBench
 
 A benchmark for spatiotemporal object search in dynamic household environments.
@@ -414,6 +439,8 @@ Recent work on robot reliability in real-world settings:
 | Benchmark | Year | Tasks | Memory Focus | Action Level |
 |-----------|------|-------|--------------|--------------|
 | MIKASA-Robo | 2025 | 32 | Object/Spatial/Sequential/Capacity | Low |
+| MIKASA-Robo-VLA | 2026 | 90 | 10 memory types, language-conditioned | Low |
+| MemoryArena | 2026 | Multi-session agentic tasks | Cross-session interdependent memory | High |
 | MemoryBench | 2025 | 3 | Spatial/Backward Reasoning | Low |
 | EmbodiedBench | 2025 | 1,128 | 6 capabilities | High + Low |
 | RoboCerebra | 2025 | Long-horizon | System 2 reasoning | High |
