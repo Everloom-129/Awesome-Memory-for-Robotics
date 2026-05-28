@@ -38,7 +38,7 @@ Memory is divided by **timescale**:
 - **Semantic Memory** — structured knowledge (scene graphs, neural-symbolic, CoT)
 - **Long-term Memory** — cross-task, cross-session accumulation (continual learning, skill transfer)
 
-And by **application domain**: VLAs, Mobile Manipulation, General Manipulation, Navigation, Locomotion, Spatial & Scene Memory, World Models, Lifelong Learning.
+And by **application domain**: Robotics Foundation Models (RFMs, formerly "VLAs" — covers VLAs, world action models, and video-diffusion policies), Mobile Manipulation, General Manipulation, Navigation, Locomotion, Spatial & Scene Memory, World Models, Lifelong Learning.
 
 A paper often fits multiple sections — it is fine (and expected) to list it in more than one table if the contribution spans categories.
 
@@ -52,6 +52,5 @@ A paper often fits multiple sections — it is fine (and expected) to list it in
 
 ## Known Quirks
 
-- Line 96 of README.md contains a typo: `"threfour"` — leave it unless fixing it is the task.
-- "Contextual" is consistently misspelled as "Contexual" throughout the repo (section headings, TOC anchors, taxonomy). Do not silently fix this misspelling unless it is the explicit task, as it would break anchor links.
+
 - `docs/taxonomy.md` is richer than README.md in some categories (retrieval-based memory, active perception, embodied agents with LLM/VLM) and can be consulted when deciding where a paper fits.

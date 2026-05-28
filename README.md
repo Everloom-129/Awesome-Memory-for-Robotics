@@ -16,12 +16,12 @@ Here we organized a list of resources on **memory for robotics**, including pape
 
 - [Surveys & Overviews](#surveys--overviews)
 - [Memory Systems & Cognitive Architecture](#memory-systems--cognitive-architecture)
-  - [Contexual Memory](#contexual-memory)
+  - [Contextual Memory](#Contextual-memory)
   - [Episodic Memory](#episodic-memory)
   - [Semantic Memory](#semantic-memory)
   - [Long-term Memory](#long-term-memory)
 - [Memory for Manipulation](#memory-for-manipulation)
-  - [VLAs](#vlas)
+  - [Robotics Foundation Models (RFMs)](#robotics-foundation-models-rfms)
   - [Mobile Manipulation](#mobile-manipulation)
   - [General Manipulation](#general-manipulation)
 - [Memory for Navigation](#memory-for-navigation)
@@ -44,7 +44,7 @@ Here we organized a list of resources on **memory for robotics**, including pape
 Memory in robotics often mixes multiple axes:
 
 - **Timescale**
-  - *Contexual memory* (within-episode, short-term working memory)
+  - *Contextual memory* (within-episode, short-term working memory)
   - *Episodic memory* (experience replay / trajectories / videos)
   - *Semantic memory* (facts, object affordances, task graphs)
   - *Long-term memory* (stable knowledge across tasks)
@@ -95,9 +95,9 @@ People built memory for robots from our cognitive science. Here are some classic
 
 ---
 
-Further, I divide memory into threfour categories: contexual memory, episodic memory, semantic memory, and long-horizon memory. 
+Further, I divide memory into four categories: Contextual memory, episodic memory, semantic memory, and long-horizon memory. 
 
-### Contexual Memory
+### Contextual Memory
 
 Working memory maintains task-relevant information during execution. It enables robots to track object states, maintain spatial awareness, and hold intermediate computation results. It is usually implemented by keyframe, history and context-window. 
 
@@ -108,6 +108,7 @@ Working memory maintains task-relevant information during execution. It enables 
 | ReMem-VLA: Empowering Vision-Language-Action Model with Memory via Dual-Level Recurrent Queries | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2603.12942) |
 | Beyond Short-Horizon: VQ-Memory for Robust Long-Horizon Manipulation in Non-Markovian Simulation Benchmarks | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2603.09513) [[Project]](https://vqmemory.github.io/) |
 | Causal Video Models Are Data-Efficient Robot Policy Learners (DVA) | Rhoda AI | 2026 | [[Project]](https://www.rhoda.ai/research/direct-video-action) |
+| DreamZero: World Action Models are Zero-shot Policies | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2602.15922) [[Project]](https://dreamzero0.github.io/) [[Code]](https://github.com/dreamzero0/dreamzero) |
 | MemER: Scaling Up Memory for Robot Control via Experience Retrieval | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2510.20328) [[Project]](https://jen-pan.github.io/memer/) |
 | Beyond Sliding Windows: Learning to Manage Memory in Non-Markovian Environments | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2512.19154) |
 | Scaling Short-Term Memory of Visuomotor Policies for Long-Horizon Tasks (PRISM) | Under Review | 2025 | [[Project]](https://remembench-prism.github.io/) |
@@ -181,19 +182,20 @@ Long-term memory enables continuous accumulation of knowledge across tasks and s
 
 ## Memory for Manipulation
 
-### VLAs
+### Robotics Foundation Models (RFMs)
 
-Because non-markovian property makes VLAs prone to overfit, it's a huge challenge for VLAs to learn memory. We need to design spatial-temporal memory mechanisms carefully. 
+Because non-markovian property makes RFMs like VLAs prone to overfit, it's a huge challenge for RFMs to learn memory. We need to design spatial-temporal memory mechanisms carefully. 
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
 | π0.7: A Steerable Model with Emergent Capabilities | Physical Intelligence | 2026 | [[Paper]](https://www.pi.website/download/pi07.pdf) [[Project]](https://www.pi.website/blog/pi07) |
+| Causal Video Models Are Data-Efficient Robot Policy Learners (DVA) | Rhoda AI | 2026 | [[Project]](https://www.rhoda.ai/research/direct-video-action) |
+| DreamZero: World Action Models are Zero-shot Policies | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2602.15922) [[Project]](https://dreamzero0.github.io/) [[Code]](https://github.com/dreamzero0/dreamzero) |
 | MEM: Multi-Scale Embodied Memory for Vision Language Action Models | Physical Intelligence | 2026 | [[Paper]](https://www.pi.website/download/Mem.pdf) [[Project]](https://www.pi.website/research/memory) |
 | ReMem-VLA: Empowering Vision-Language-Action Model with Memory via Dual-Level Recurrent Queries | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2603.12942) |
 | HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2604.18791) |
 | EchoVLA: Synergistic Declarative Memory for VLA-Driven Mobile Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2511.18112) |
 | Beyond Short-Horizon: VQ-Memory for Robust Long-Horizon Manipulation in Non-Markovian Simulation Benchmarks | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2603.09513) [[Project]](https://vqmemory.github.io/) |
-| Causal Video Models Are Data-Efficient Robot Policy Learners (DVA) | Rhoda AI | 2026 | [[Project]](https://www.rhoda.ai/research/direct-video-action) |
 | MemER: Scaling Up Memory for Robot Control via Experience Retrieval | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2510.20328) [[Project]](https://jen-pan.github.io/memer/) |
 | HAMLET: Switch your Vision-Language-Action Model into a History-Aware Policy | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2510.00695) [[Project]](https://myungkyukoo.github.io/hamlet/) |
 | HiF-VLA: Hindsight, Insight and Foresight through Motion Representation for Vision-Language-Action Models | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2512.09928) |
@@ -305,8 +307,10 @@ World models that incorporate memory for prediction and planning.
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| Causal Video Models Are Data-Efficient Robot Policy Learners (DVA) | Rhoda AI | 2026 | [[Project]](https://www.rhoda.ai/research/direct-video-action) |
 | MosaicMem: Persistent Geometry + Dynamic Content for Long-Horizon World Models | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2603.17117) [[Project]](https://mosaicmem.github.io/mosaicmem/) |
 | World Model for Robot Learning: A Comprehensive Survey | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2605.00080) |
+| DreamZero: World Action Models are Zero-shot Policies | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2602.15922) [[Project]](https://dreamzero0.github.io/) [[Code]](https://github.com/dreamzero0/dreamzero) |
 | Mastering Diverse Control Tasks through World Models | Nature | 2025 | [[Paper]](https://www.nature.com/articles/s41586-025-08744-2) |
 | Ctrl-World: A Controllable Generative World Model for Robot Manipulation | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2510.10125) |
 | Genie 3: A New Frontier for World Models | Google DeepMind | 2025 | [[Blog]](https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/) |
