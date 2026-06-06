@@ -279,7 +279,7 @@ Representing and reasoning about 3D environments.
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
 | Remember to be Curious: Episodic Context and Persistent Worlds for 3D Exploration | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2605.22814) [[Project]](https://recuriosity.github.io/) [[Code]](https://github.com/recuriosity/recuriosity) |
-| 3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning | CVPR | 2025 | [[Paper]](https://arxiv.org/abs/2411.17735) [[Project]](https://umass-embodied-agi.github.io/3D-Mem/) |
+| 3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning | CVPR | 2025 | [[Paper]](https://arxiv.org/abs/2411.17735) [[Project]](https://umass-embodied-agi.github.io/3D-Mem/) [[Code]](https://github.com/UMass-Embodied-AGI/3D-Mem) |
 | What Is The Best 3D Scene Representation for Robotics? | arXiv | 2025 | [[Paper]](https://arxiv.org/html/2512.03422v1) |
 | SnapMem: 3D Scene Memory for Embodied Exploration | OpenReview | 2024 | [[Paper]](https://openreview.net/forum?id=mz8unSsSsB) |
 | Embodied-RAG: General Non-parametric Embodied Memory for Retrieval and Generation | arXiv | 2024 | [[Paper]](https://arxiv.org/abs/2409.18313) |
@@ -364,6 +364,7 @@ We treasure these features that actually pose challenges to memory:
 | RMBench | 2026 | 9 memory-dependent manipulation tasks over multiple memory-complexity levels | [[Paper]](https://arxiv.org/abs/2603.01229) [[Project]](https://rmbench.github.io/) [[Code]](https://github.com/RoboTwin-Platform/RMBench) |
 | LIBERO-Mem | 2026 | Object-centric non-Markovian manipulation under object-level partial observability | [[Paper]](https://arxiv.org/abs/2511.11478) |
 | MemMimic | 2026 | Non-Markovian imitation tasks with in-trial and cross-trial memory regimes | [[Paper]](https://arxiv.org/abs/2604.18933) [[Project]](https://gated-memory-policy.github.io/) |
+| AbstainEQA | 2025 | Benchmarks abstention in embodied QA — when agents should say "I don't know" — across 5 categories with 1,636 ambiguous question variants; frontier models reach only 42.79% abstention recall vs. 91.17% for humans | [[Paper]](https://arxiv.org/abs/2512.04597) [[Project]](https://abstaineqa.github.io/) [[Code]](https://github.com/gibrantaowu/AbstainEQA) |
 
 Read more: [`docs/evaluation.md`](docs/evaluation.md)
 
