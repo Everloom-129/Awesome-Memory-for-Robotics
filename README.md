@@ -196,6 +196,7 @@ Because non-markovian property makes RFMs like VLAs prone to overfit, it's a hug
 | HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2604.18791) |
 | EchoVLA: Synergistic Declarative Memory for VLA-Driven Mobile Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2511.18112) |
 | Beyond Short-Horizon: VQ-Memory for Robust Long-Horizon Manipulation in Non-Markovian Simulation Benchmarks | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2603.09513) [[Project]](https://vqmemory.github.io/) |
+| OptimusVLA: Global Prior Meets Local Consistency: Dual-Memory Augmented Vision-Language-Action Model for Efficient Robotic Manipulation | CVPR | 2026 | [[Paper]](https://arxiv.org/abs/2602.20200) |
 | MemER: Scaling Up Memory for Robot Control via Experience Retrieval | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2510.20328) [[Project]](https://jen-pan.github.io/memer/) |
 | HAMLET: Switch your Vision-Language-Action Model into a History-Aware Policy | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2510.00695) [[Project]](https://myungkyukoo.github.io/hamlet/) |
 | HiF-VLA: Hindsight, Insight and Foresight through Motion Representation for Vision-Language-Action Models | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2512.09928) |
@@ -223,6 +224,7 @@ Because non-markovian property makes RFMs like VLAs prone to overfit, it's a hug
 | RMBench: Memory-Dependent Robotic Manipulation Benchmark with Insights into Policy Design | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2603.01229) [[Project]](https://rmbench.github.io/) [[Code]](https://github.com/RoboTwin-Platform/RMBench) |
 | Rethinking Progression of Memory State in Robotic Manipulation: An Object-Centric Perspective | AAAI | 2026 | [[Paper]](https://arxiv.org/abs/2511.11478) |
 | Gated Memory Policy | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2604.18933) [[Project]](https://gated-memory-policy.github.io/) |
+| OptimusVLA: Global Prior Meets Local Consistency: Dual-Memory Augmented Vision-Language-Action Model for Efficient Robotic Manipulation | CVPR | 2026 | [[Paper]](https://arxiv.org/abs/2602.20200) |
 | Learning Long-Context Diffusion Policies via Past-Token Prediction | CoRL | 2025 | [[Paper]](https://arxiv.org/abs/2505.09561) [[Project]](https://long-context-dp.github.io/) |
 | SAM2Act: Integrating Visual Foundation Model with A Memory Architecture for Robotic Manipulation | ICML | 2025 | [[Paper]](https://arxiv.org/abs/2501.18564) |
 | Out of Sight, Still in Mind: Reasoning and Planning about Unobserved Objects with Video Tracking Enabled Memory Models | ICRA | 2024 | [[Paper]](https://arxiv.org/abs/2309.15278) |
