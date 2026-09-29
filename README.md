@@ -367,6 +367,7 @@ We treasure these features that actually pose challenges to memory:
 | LIBERO-Mem | 2026 | Object-centric non-Markovian manipulation under object-level partial observability | [[Paper]](https://arxiv.org/abs/2511.11478) |
 | MemMimic | 2026 | Non-Markovian imitation tasks with in-trial and cross-trial memory regimes | [[Paper]](https://arxiv.org/abs/2604.18933) [[Project]](https://gated-memory-policy.github.io/) |
 | AbstainEQA | 2025 | Benchmarks abstention in embodied QA — when agents should say "I don't know" — across 5 categories with 1,636 ambiguous question variants; frontier models reach only 42.79% abstention recall vs. 91.17% for humans | [[Paper]](https://arxiv.org/abs/2512.04597) [[Project]](https://abstaineqa.github.io/) [[Code]](https://github.com/gibrantaowu/AbstainEQA) |
+| EmbodiedMemory-Bench | 2026 | 2,554 interactive episodes testing visual recall, dynamic state tracking, interaction outcomes, and experience generalization | [[Paper]](https://arxiv.org/abs/2609.28236) [[Code]](https://github.com/ZJU-OmniAI/Embodied-Omni/tree/main/embodied_memory) [[Project]](https://zju-omniai.github.io/Embodied-Omni/EmbodiedMemoryBench/) |
 
 Read more: [`docs/evaluation.md`](docs/evaluation.md)
 
