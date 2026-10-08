@@ -179,6 +179,69 @@ Non-Markovian imitation benchmark introduced with Gated Memory Policy.
 | **Memory Regimes** | In-trial working memory and cross-trial reference memory |
 | **Links** | [[Paper]](https://arxiv.org/abs/2604.18933) [[Project]](https://gated-memory-policy.github.io/) |
 
+### RoboMME-Interference
+
+Cross-session benchmark data and evaluation results built on RoboMME task families.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 9 task families with controlled history conditions |
+| **Memory Challenge** | Retrieving a relevant prior demonstration among unrelated sessions |
+| **Links** | [[Paper]](https://arxiv.org/abs/2606.22338) [[Project]](https://robotmemorybench.com/) [[GitHub]](https://github.com/SoumilRathi/robomme-interference) |
+
+### ReMemBench
+
+Household manipulation benchmark introduced with PRISM for short-term memory research.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 8 household manipulation tasks |
+| **Memory Types** | Spatial, prospective, object-associative, and object-set memory |
+| **Links** | [[Paper]](https://arxiv.org/abs/2606.16178) [[Project]](https://shahrutav.github.io/short-term-memory/) [[GitHub]](https://github.com/ShahRutav/ReMemBench) |
+
+### MemoryRTBench
+
+RoboTwin 2.0 manipulation task suite introduced with MemoAct.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 6 manipulation tasks |
+| **Memory Challenge** | Ordered execution, recall of initial scene state, and repetition tracking |
+| **Memory Types** | Sequential, spatial, and episodic memory |
+| **Links** | [[Paper]](https://arxiv.org/abs/2603.18494) [[Project]](https://memoact-project.github.io/MemoActPage/) |
+
+### MEMOBench
+
+History-dependent manipulation dataset with annotations for process-level memory diagnostics.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 30 history-dependent tasks |
+| **Data** | 1,500 expert demonstrations and executable memory checkpoints |
+| **Annotations** | Language descriptions and simulator predicates for storage, update, and compression |
+| **Links** | [[Paper]](https://arxiv.org/abs/2609.07047) [[GitHub]](https://github.com/Collab-Gen/MEMOBench) |
+
+### HIDE
+
+RLBench task suite accompanying SEEK for memory-dependent skills under partial observability.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 15 tasks |
+| **Memory Challenge** | Repetition counting, historical-state recall, and execution-progress tracking |
+| **Availability** | Code and data listed as coming soon on the project page |
+| **Links** | [[Paper]](https://arxiv.org/abs/2609.38886) [[Project]](https://nanamma.github.io/HIDE-SEEK/) |
+
+### LIBERO-RoboHarness
+
+Manipulation robustness and task-chaining benchmark introduced with RoboHarness.
+
+| Attribute | Details |
+|-----------|---------|
+| **Focus** | Frozen VLA adaptation under perceptual noise and environmental variation |
+| **Memory Challenge** | Reusing prior execution experience and consolidating failure-derived knowledge |
+| **Links** | [[Paper]](https://arxiv.org/abs/2603.24060) [[GitHub]](https://github.com/LZY-1021/RoboHarness) |
+
 ### Camo-Dataset
 
 Real-robot UR5e dataset introduced with Chameleon for episodic recall and memory-dependent manipulation.
@@ -250,6 +313,38 @@ Long-horizon robot navigation videos for question answering.
 | **Tasks** | Perceptual question-answering |
 | **Memory Challenge** | Long-horizon reasoning, semantic memory |
 | **Links** | [[Project]](https://rasc.usc.edu/blog/remembr/) |
+
+### Sequential-EQA
+
+Scene-level question sequences for studying memory accumulation across embodied question-answering queries.
+
+| Attribute | Details |
+|-----------|---------|
+| **Data** | 50 HM3D scenes and 498 questions derived from OpenEQA |
+| **Protocol** | Scene memory persists across successive questions |
+| **Memory Challenge** | Reusing spatially grounded visual-semantic evidence across queries |
+| **Links** | [[Paper]](https://arxiv.org/abs/2607.21571) [[GitHub]](https://github.com/jangablox/sequential-eqa) |
+
+### EvoNav-Bench
+
+ProcTHOR-based lifelong navigation task suite with scene changes between subtasks.
+
+| Attribute | Details |
+|-----------|---------|
+| **Focus** | Repeated navigation in evolving environments |
+| **Memory Challenge** | Detecting and updating outdated persistent scene memory |
+| **Links** | [[Paper]](https://arxiv.org/abs/2609.08292) |
+
+### MemTransfer
+
+Warehouse navigation benchmark with expert demonstrations supplying prior experience.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 100 cases across 10 task types |
+| **Variations** | Starting pose, route availability, history amount, and history relevance |
+| **Memory Challenge** | Transferring stored experience to changed execution conditions |
+| **Links** | [[Paper]](https://arxiv.org/abs/2609.32313) |
 
 ### VLNGo2-Matterport
 
@@ -350,6 +445,15 @@ Open-source robot dataset from RealMan Robotics.
 | DROID | 2023 | 76K trajectories | 1 | Scene diversity |
 | BridgeData V2 | 2023 | 60K trajectories | 1 | Multi-skill |
 | MIKASA-Robo | 2025 | 32 datasets | 1 | Memory-intensive |
+| RoboMME-Interference | 2026 | 9 task families | N/A | Cross-session interference |
+| ReMemBench | 2026 | 8 tasks | N/A | Four short-term memory categories |
+| MemoryRTBench | 2026 | 6 tasks | N/A | Sequential/Spatial/Episodic |
+| MEMOBench | 2026 | 30 tasks, 1,500 demonstrations | N/A | Storage/Update/Compression |
+| HIDE | 2026 | 15 tasks; data coming soon | N/A | Hidden task states and skill progress |
+| LIBERO-RoboHarness | 2026 | Robustness and task chaining | N/A | Experience reuse and failure memory |
+| Sequential-EQA | 2026 | 50 scenes, 498 questions | N/A | Persistent visual-semantic evidence |
+| EvoNav-Bench | 2026 | Evolving navigation sequences | N/A | Updating stale scene memory |
+| MemTransfer | 2026 | 100 cases, 10 task types | N/A | Memory transfer |
 | HM3D | 2021 | 1000 scenes | N/A | Navigation |
 | BEHAVIOR-1K | 2024 | 10K demos | N/A | Long-horizon |
 | EmbodiedBench | 2025 | 1128 tasks | N/A | MLLM evaluation |

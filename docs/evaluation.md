@@ -179,6 +179,18 @@ Standardized benchmark for evaluating memory in robotic generalist policies.
 | **Venue** | ICML 2026 |
 | **Links** | [[Paper]](https://arxiv.org/abs/2603.04639) [[Project]](https://robomme.github.io/) [[Code]](https://github.com/RoboMME/robomme_benchmark) |
 
+#### RoboMME-Interference
+
+Cross-session extension of RoboMME testing whether relevant prior demonstrations remain usable among unrelated robot experiences.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 9 RoboMME task families |
+| **Memory Challenge** | Cross-session interference and retrieval of relevant prior experience |
+| **Protocol** | Vary the number of unrelated sessions in the history buffer |
+| **Year** | 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2606.22338) [[Project]](https://robotmemorybench.com/) [[Code]](https://github.com/SoumilRathi/robomme-interference) |
+
 #### RMBench
 
 Simulation benchmark for memory-dependent robotic manipulation policy design.
@@ -234,6 +246,65 @@ Perturbation-injection protocol introduced with HELM for evaluating memory-condi
 | **Memory Challenge** | Episodic memory, pre-execution verification, rollback and replanning |
 | **Year** | 2026 |
 | **Links** | [[Paper]](https://arxiv.org/abs/2604.18791) |
+
+#### ReMemBench
+
+Household manipulation benchmark introduced with PRISM to evaluate distinct short-term memory requirements.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 8 household manipulation tasks |
+| **Memory Types** | Spatial, prospective, object-associative, and object-set memory |
+| **Year** | 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2606.16178) [[Project]](https://shahrutav.github.io/short-term-memory/) [[Code]](https://github.com/ShahRutav/ReMemBench) |
+
+#### MemoryRTBench
+
+Memory-dependent manipulation benchmark introduced with MemoAct.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 6 manipulation tasks |
+| **Memory Types** | Sequential, spatial, and episodic memory |
+| **Platform** | RoboTwin 2.0 |
+| **Year** | 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2603.18494) [[Project]](https://memoact-project.github.io/MemoActPage/) |
+
+#### MEMOBench
+
+Process-level benchmark that distinguishes memory errors from failures to execute a manipulation.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 30 history-dependent tasks |
+| **Diagnostics** | Executable checkpoints for memory storage, update, and compression |
+| **Metrics** | Memory Storage Rate, Memory Update Rate, Memory Compression Rate, and task success |
+| **Year** | 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2609.07047) [[Code]](https://github.com/Collab-Gen/MEMOBench) |
+
+#### HIDE
+
+Skill-level manipulation memory benchmark accompanying the SEEK framework.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 15 tasks |
+| **Memory Challenge** | Repetition counting, historical-state recall, and execution-progress tracking |
+| **Platform** | RLBench |
+| **Availability** | Code and data listed as coming soon on the project page |
+| **Year** | 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2609.38886) [[Project]](https://nanamma.github.io/HIDE-SEEK/) |
+
+#### LIBERO-RoboHarness
+
+Robustness benchmark introduced with RoboHarness for evaluating memory-assisted adaptation of frozen VLA policies.
+
+| Attribute | Details |
+|-----------|---------|
+| **Focus** | Robustness to perceptual noise and environmental variation, including long-horizon task chaining |
+| **Memory Challenge** | Retrieval of prior execution traces, failure attribution, and reuse of consolidated experience |
+| **Venue** | IROS 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2603.24060) [[Code]](https://github.com/LZY-1021/RoboHarness) |
 
 #### VLABench
 
@@ -345,6 +416,44 @@ Open Vocabulary Object Goal Navigation benchmark.
 | **Memory Challenge** | Semantic generalization |
 | **Links** | [[Paper]](https://ieeexplore.ieee.org/document/10802709/) |
 
+#### Sequential-EQA
+
+Sequential embodied question answering evaluation introduced in *Beyond Episodic Evaluation*, carrying scene memory across questions.
+
+| Attribute | Details |
+|-----------|---------|
+| **Data** | 50 HM3D scenes with 498 questions derived from OpenEQA |
+| **Protocol** | Paired episodic and sequential runs on the same scene-level question sequences |
+| **Memory Challenge** | Accumulating and reusing spatially grounded visual-semantic evidence |
+| **Real-World Evaluation** | Mobile robot validation |
+| **Venue** | IROS 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2607.21571) [[Code]](https://github.com/jangablox/sequential-eqa) |
+
+#### EvoNav-Bench
+
+Lifelong navigation benchmark in which the environment changes between navigation subtasks.
+
+| Attribute | Details |
+|-----------|---------|
+| **Platform** | ProcTHOR |
+| **Protocol** | Controlled scene modifications between tasks in a persistent environment |
+| **Memory Challenge** | Updating stale scene observations while preserving useful prior experience |
+| **Year** | 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2609.08292) |
+
+#### MemTransfer
+
+Navigation benchmark testing whether stored experience transfers when test conditions differ from demonstrations.
+
+| Attribute | Details |
+|-----------|---------|
+| **Tasks** | 100 navigation cases across 10 task types |
+| **Platform** | Simulated warehouse |
+| **Protocol** | Vary starting pose, route availability, and the amount and relevance of history |
+| **Memory Challenge** | Reusing experience under mismatched execution conditions |
+| **Year** | 2026 |
+| **Links** | [[Paper]](https://arxiv.org/abs/2609.32313) |
+
 ### World Model Benchmarks
 
 #### EWMBench (Embodied World Model Benchmark)
@@ -413,6 +522,10 @@ Evaluates tasks that demand fine-grained recall and multi-hop reasoning over pas
 | **Ablation Studies** | Systematic removal of memory components |
 | **Baseline Comparisons** | Comparison with memoryless baselines |
 
+### Counterfactual Memory Audit (CMA)
+
+CMA tests whether history guides the action warranted by a robot's past. It pairs different histories that lead to the same verified current input, queries a frozen policy with shared randomness, and evaluates the saved actions under both histories. The audit distinguishes action sensitivity from correct choice, physical value, and reliability for each pair. [[Paper]](https://arxiv.org/abs/2609.27247)
+
 ### Real-World Evaluation
 
 | Protocol | Description |
@@ -447,6 +560,15 @@ Recent work on robot reliability in real-world settings:
 | VLABench | 2025 | Language-conditioned | Long-horizon | High |
 | RoboMemArena | 2026 | 26 | Memory annotations and long-horizon physical evaluation | High + Low |
 | RoboMME | 2026 | 16 | Temporal/Spatial/Object/Procedural memory | Low |
+| RoboMME-Interference | 2026 | 9 task families | Cross-session interference and retrieval | Low |
+| ReMemBench | 2026 | 8 | Spatial/Prospective/Object-Associative/Object-Set memory | Low |
+| MemoryRTBench | 2026 | 6 | Sequential/Spatial/Episodic memory | Low |
+| MEMOBench | 2026 | 30 | Storage/Update/Compression diagnostics | Low |
+| HIDE | 2026 | 15 | Repetition/Historical recall/Execution progress | Low |
+| LIBERO-RoboHarness | 2026 | Robustness and task chaining | Failure attribution and experience reuse | High + Low |
+| Sequential-EQA | 2026 | 498 questions in 50 scenes | Persistent visual-semantic scene memory | High |
+| EvoNav-Bench | 2026 | Lifelong navigation sequences | Stale memory and scene updates | High |
+| MemTransfer | 2026 | 100 cases, 10 task types | Memory transfer under changed conditions | High |
 | RMBench | 2026 | 9 | Memory complexity and policy design ablations | Low |
 | LIBERO-Mem | 2026 | Object-centric tasks | Object-level non-Markovian memory | Low |
 | MemMimic | 2026 | Non-Markovian imitation | In-trial and cross-trial memory | Low |
