@@ -516,6 +516,7 @@ We treasure these features that actually pose challenges to memory:
 
 | Benchmark / Evaluation | Year | Focus | Links |
 |-----------|------|-------|-------|
+| RoboQuest | 2026 | 10 mobile-manipulation tasks with hidden information; search tasks require remembering where the robot has already looked | [[Paper]](https://arxiv.org/abs/2610.10388) [[Project]](https://declare-lab.github.io/RoboQuest/) [[Code]](https://github.com/declare-lab/RoboQuest) |
 | HIDE | 2026 | 15 partially observable manipulation tasks testing skill-level recall, repetition, and execution progress | [[Paper]](https://arxiv.org/abs/2609.38886) [[Project]](https://nanamma.github.io/HIDE-SEEK/) |
 | MemTransfer | 2026 | 100 warehouse navigation cases testing memory transfer under changed starts, routes, and history relevance | [[Paper]](https://arxiv.org/abs/2609.32313) |
 | Counterfactual Memory Audit (CMA) | 2026 | Swaps histories under identical current inputs to test whether memory supports the correct physical decision | [[Paper]](https://arxiv.org/abs/2609.27247) |
