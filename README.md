@@ -14,6 +14,10 @@ Here we organized a list of resources on **memory for robotics**, including pape
 
 ## 📢 Update
 
+- **2026-11-05:** Added a taxonomic index of memory in robotic foundation-model systems.
+
+- **2026-11-02 — October 2026 edition:** Added nine October papers and HuMeGo, covering latent, executable, episodic, and persistent robotic memory. Literature cutoff: **2026-10-31**; preprints are labeled arXiv.
+
 - **2026-10-06:** Major update covering June to October 2026, with expanded research categories and evaluation resources.
 - **2026-06-06:** Expanded foundation model and manipulation coverage.
 - **2026-06-05:** Updated benchmarks and code links.
@@ -26,7 +30,7 @@ Here we organized a list of resources on **memory for robotics**, including pape
 - **2026-01-06:** Expanded memory research coverage.
 - **2026-01-05:** Initialized the reading list and taxonomy.
 
-**Future work:** Add more **robotics memory / System 2** papers following the release of [GPT-6 Astra](https://developers.openai.com/api/docs/models/gpt-6-astra).
+**Literature indices:** [October 2026](docs/2026-10-update.md) · [Memory in robotic foundation-model systems](docs/foundation-model-memory-taxonomy.md).
 
 ---
 
@@ -128,6 +132,11 @@ Working memory maintains task-relevant information during execution. It enables 
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| Memory before Goal: Role of Pre-History Memory for Humanoid Loco-Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.31166) |
+| Plan First, Act Later: Streaming Reasoning for Executable Memory in Robot Control | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.29329) |
+| Mem4Act: Learning Effective Latent Memory for Long-Horizon Robotic Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.22323) |
+| LTM: Latent Transition Based In-Context Memory for Vision-Language-Action Models | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.21362) |
+| Can a Frontier VLM Serve as a Robot Policy for Memory-Dependent Manipulation? | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.17350) |
 | Divide-and-Remember: Recursive Action-Relevant Memory for Long-Horizon VLA Policies | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.00982) [[Project]](https://dnr-memory.github.io/) |
 | Benchmarking and Enhancing Skill-Level Memory for Partially Observable Robotic Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2609.38886) [[Project]](https://nanamma.github.io/HIDE-SEEK/) |
 | Remember What You Did: Action-History Memory with Dual-Expert Denoising for Long-Horizon Vision-Language-Action Policies | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2609.37307) |
@@ -172,6 +181,7 @@ Episodic memory stores specific events and experiences from the robot's past, en
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| MemVLN: Streaming Episodic Memory for Vision-Language Navigation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.35066) |
 | MemBodied: Recurrent Associative Memory for Vision-Language-Action Models | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2609.28256) [[Project]](https://declare-lab.github.io/MemBodied/) [[Code]](https://github.com/declare-lab/MemBodied) |
 | Memory as Plans: World-Action Modeling with Memory-Grounded Planning | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2609.11561) [[Project]](https://sizhezhao.github.io/projects/MaP-WAM/) |
 | OnEvoMemory: Evolving Memory through Online Robot Rollouts for Pretrained Robot Policies | ECCV Workshop | 2026 | [[Paper]](https://arxiv.org/abs/2608.08749) |
@@ -229,6 +239,8 @@ Long-term memory enables continuous accumulation of knowledge across tasks and s
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.42141) |
+| EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.10498) |
 | Inline Memory Meets Reusable Skills: Memory-centric Framework for Vision-Language-Action Model | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2609.39794) |
 | MessyMem: Learning-from-Doing Memory for Mobile Manipulation | CoRL | 2026 | [[Paper]](https://arxiv.org/abs/2609.15976) [[Project]](https://messymem.github.io/) |
 | Memory Anchors for Continual Robot Learning | CoRL | 2026 | [[Paper]](https://arxiv.org/abs/2608.26545) [[Project]](https://robot-adaptation.github.io/MemoryAnchors/) |
@@ -260,6 +272,13 @@ Because non-markovian property makes RFMs like VLAs prone to overfit, it's a hug
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.42141) |
+| Memory before Goal: Role of Pre-History Memory for Humanoid Loco-Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.31166) |
+| Plan First, Act Later: Streaming Reasoning for Executable Memory in Robot Control | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.29329) |
+| Mem4Act: Learning Effective Latent Memory for Long-Horizon Robotic Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.22323) |
+| LTM: Latent Transition Based In-Context Memory for Vision-Language-Action Models | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.21362) |
+| Can a Frontier VLM Serve as a Robot Policy for Memory-Dependent Manipulation? | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.17350) |
+| EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.10498) |
 | Divide-and-Remember: Recursive Action-Relevant Memory for Long-Horizon VLA Policies | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.00982) [[Project]](https://dnr-memory.github.io/) |
 | ECoMEM: Explicit Concept Memory for Memory-Dependent Robot Control | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.00801) [[Project]](https://ecomem.github.io/) |
 | Inline Memory Meets Reusable Skills: Memory-centric Framework for Vision-Language-Action Model | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2609.39794) |
@@ -362,6 +381,8 @@ Memory is of great importance for navigation, there has been rich research on it
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| MemVLN: Streaming Episodic Memory for Vision-Language Navigation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.35066) |
+| AVALON: Zero-Shot Indoor Navigation with Human-Seeded Topological Memory | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.21586) |
 | MemTransfer: Benchmarking Memory Beyond Matched Experience in Embodied Decision-Making | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2609.32313) |
 | GLAM: Training a latent world model over global spatiotemporal memory for active exploration and navigation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2609.14561) |
 | EvoNav-Bench: Benchmarking Lifelong Navigation in Evolving Environments | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2609.08292) |
@@ -393,6 +414,7 @@ Memory is of great importance for navigation, there has been rich research on it
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| Memory before Goal: Role of Pre-History Memory for Humanoid Loco-Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.31166) |
 | Echo in the Steps: Learning Perceptive Humanoid Parkour with Gated Memory | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2609.28960) |
 | LocoFormer: Generalist Locomotion via Long-context Adaptation | CoRL | 2025 | [[Paper]](https://arxiv.org/abs/2509.23745) [[Project]](https://generalist-locomotion.github.io/) |
 | Sim-to-Real Transfer for Quadrupedal Locomotion via Terrain Transformer (TERT) | RA-L | 2023 | [[Paper]](https://arxiv.org/abs/2212.07740) |
@@ -485,6 +507,8 @@ GLAM reports experiments on a controlled HM3D ObjectNav subset.
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
+| RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.42141) |
+| EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2610.10498) |
 | Inline Memory Meets Reusable Skills: Memory-centric Framework for Vision-Language-Action Model | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2609.39794) |
 | Memory Anchors for Continual Robot Learning | CoRL | 2026 | [[Paper]](https://arxiv.org/abs/2608.26545) [[Project]](https://robot-adaptation.github.io/MemoryAnchors/) |
 | World Action Models Enable Continual Imitation Learning with Recurrent Generative Replays | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2606.27374) [[Project]](https://manishgovind.github.io/REGEN/) [[Code]](https://github.com/ManishGovind/REGEN) |
@@ -516,6 +540,7 @@ We treasure these features that actually pose challenges to memory:
 
 | Benchmark / Evaluation | Year | Focus | Links |
 |-----------|------|-------|-------|
+| HuMeGo | 2026 | Goal-preceding object-event memory for humanoid loco-manipulation; six simulated and six real-world Unitree G1 tasks | [[Paper]](https://arxiv.org/abs/2610.31166) |
 | HIDE | 2026 | 15 partially observable manipulation tasks testing skill-level recall, repetition, and execution progress | [[Paper]](https://arxiv.org/abs/2609.38886) [[Project]](https://nanamma.github.io/HIDE-SEEK/) |
 | MemTransfer | 2026 | 100 warehouse navigation cases testing memory transfer under changed starts, routes, and history relevance | [[Paper]](https://arxiv.org/abs/2609.32313) |
 | Counterfactual Memory Audit (CMA) | 2026 | Swaps histories under identical current inputs to test whether memory supports the correct physical decision | [[Paper]](https://arxiv.org/abs/2609.27247) |
