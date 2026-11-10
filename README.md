@@ -317,6 +317,7 @@ Because non-markovian property makes RFMs like VLAs prone to overfit, it's a hug
 | CronusVLA: Towards Efficient and Robust Manipulation via Multi-Frame Vision-Language-Action Modeling | ArKiv | 2025 | [[Paper]](https://arxiv.org/abs/2506.19816) [[Project]](https://lihaohn.github.io/CronusVLA.github.io/) |
 | GraSP-VLA: Graph-based Symbolic Action Representation for Long-Horizon Planning with VLA Policies | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2511.04357) |
 | MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action Models for Robotic Manipulation | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2508.19236) |
+| HeLM: Hierarchical Explicit Language Memory for Non-Markovian Manipulation | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2611.02660) [[Code]](https://github.com/kimspacehuni/HeLM) [[Project]](https://kimspacehuni.github.io/HeLM/) |
 
 
 ### Mobile Manipulation
